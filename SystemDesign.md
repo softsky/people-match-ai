@@ -83,6 +83,7 @@ Basically system architecture will look like that:
 
 Training Box performs following operations:
 - New Profiles Crawling
+- Itentity Match and Profile Merging
 - Profile Enhancement
 - Model training
 - Model distribution across Evaluation Nodes
