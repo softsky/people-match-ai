@@ -1,0 +1,140 @@
+<h1>
+<a id="user-content-overall-system-architecture" class="anchor" href="#overall-system-architecture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overall System Architecture</h1>
+<p><a href="https://github.com/softsky/people-match-ai">PeopleMatchAI</a> designed for fast determination of purchase capabilities using person profile.</p>
+<p>Persons profile looks like this:</p>
+<div class="highlight highlight-source-js"><pre>{
+	<span class="pl-s"><span class="pl-pds">"</span>_id<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
+		<span class="pl-s"><span class="pl-pds">"</span>$oid<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>58ea248524dce09f41209710<span class="pl-pds">"</span></span>
+	},
+	<span class="pl-s"><span class="pl-pds">"</span>searchResult<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+		{
+			<span class="pl-s"><span class="pl-pds">"</span>otherEmails<span class="pl-pds">"</span></span><span class="pl-k">:</span> [],
+			<span class="pl-s"><span class="pl-pds">"</span>country<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>United States<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>source<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>PeopleData<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>lastUpdated<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>2016-09-26T16:54:28Z<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>AVdO_GcbPKMaPmPU7jEY<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>state<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>arizona<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>probability<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-c1">1</span>,
+			<span class="pl-s"><span class="pl-pds">"</span>query<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>MANUAL_REQUEST<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>firstName<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>John<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>phone<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>1-520-247-9050<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>lastName<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Soukup<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>stateAbbr<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>AZ<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>activity<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-c1">null</span>,
+			<span class="pl-s"><span class="pl-pds">"</span>gender<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>M<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>city<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Tucson<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>result<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
+				<span class="pl-s"><span class="pl-pds">"</span>resultStatus<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>OK<span class="pl-pds">"</span></span>,
+			},
+			<span class="pl-s"><span class="pl-pds">"</span>term<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>[1]<span class="pl-pds">"</span></span>,
+			<span class="pl-s"><span class="pl-pds">"</span>mergedIdentities<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+				{
+					<span class="pl-s"><span class="pl-pds">"</span>source<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>EX<span class="pl-pds">"</span></span>,
+					<span class="pl-s"><span class="pl-pds">"</span>datetime<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>2016-06-23T00:00:00Z<span class="pl-pds">"</span></span>,
+					<span class="pl-s"><span class="pl-pds">"</span>lname<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Soukup<span class="pl-pds">"</span></span>,
+					<span class="pl-s"><span class="pl-pds">"</span>class<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>com.selerityfinancial.person.peopledata.dto.PeopleDataPerson<span class="pl-pds">"</span></span>,
+					<span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>c.l.soukup@comcast.net<span class="pl-pds">"</span></span>,
+					<span class="pl-s"><span class="pl-pds">"</span>fname<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>John<span class="pl-pds">"</span></span>,
+					<span class="pl-s"><span class="pl-pds">"</span>address<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
+						<span class="pl-s"><span class="pl-pds">"</span>zip<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>85749<span class="pl-pds">"</span></span>,
+						<span class="pl-s"><span class="pl-pds">"</span>city<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Tucson<span class="pl-pds">"</span></span>,
+						<span class="pl-s"><span class="pl-pds">"</span>streetAddress<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>9352 E Vallarta Trl<span class="pl-pds">"</span></span>,
+						<span class="pl-s"><span class="pl-pds">"</span>state<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>AZ<span class="pl-pds">"</span></span>,
+						<span class="pl-s"><span class="pl-pds">"</span>class<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>com.selerityfinancial.person.peopledata.dto.PeopleDataAddress<span class="pl-pds">"</span></span>
+					},
+					<span class="pl-s"><span class="pl-pds">"</span>ip<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+						<span class="pl-s"><span class="pl-pds">"</span>71.226.126.234<span class="pl-pds">"</span></span>
+					],
+					<span class="pl-s"><span class="pl-pds">"</span>phone<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+						<span class="pl-s"><span class="pl-pds">"</span>1-520-247-9050<span class="pl-pds">"</span></span>
+					],
+				},
+                    ]}
+]}
+                                
+</pre></div>
+<h3>
+<a id="user-content-comments-on-person-profile" class="anchor" href="#comments-on-person-profile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Comments on Person Profile</h3>
+<ul>
+<li>mergedDetails section contains the array of profile data collected from different places</li>
+<li>it may contain duplicated</li>
+<li>it may contain empty records</li>
+</ul>
+<p>System support over 240 million profiles of US citizens.</p>
+<h2>
+<a id="user-content-requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+<ul>
+<li>Scalability:
+System architecture should be scalable and high performant (in terms of traininig and evaluation).</li>
+<li>High Performance:
+Since there will be multiple concurrent searches, and every search will take valuable amount of time, previous results should be cached.
+Cache will be wiped every time main database of people profiles is updated
+We should monitor for most frequent searches and cache results only for them, while searches performed one or few times won't be cached to save memory and drive space</li>
+</ul>
+<h2>
+<a id="user-content-other-requirements" class="anchor" href="#other-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other requirements:</h2>
+<ul>
+<li>Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for real-time evaluation).</li>
+</ul>
+<p><a href="Resources/uml/SystemDeployment.uml">System Deployment UML Diagram</a>
+<a href="Resources/SystemDeployment.uml.png" target="_blank"><img src="Resources/SystemDeployment.uml.png" alt="Deployment Diagram" style="max-width:100%;"></a>
+Basically system architecture will look like that:</p>
+<h2>
+<a id="user-content-training-box" class="anchor" href="#training-box" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Training Box</h2>
+<p>Training Box performs following operations:</p>
+<ul>
+<li>New Profiles Crawling</li>
+<li>Itentity Match and Profile Merging</li>
+<li>Profile Enhancement</li>
+<li>Model training</li>
+<li>Model distribution across Evaluation Nodes</li>
+</ul>
+<p>Training Box use Google <em>Tensor Flow</em> as AI</p>
+<p>Old and new profiles form <code>Train Corpus</code> which is used by <em>TensorFlow</em> to create new <code>Models</code></p>
+<h4>
+<a id="user-content-deployment" class="anchor" href="#deployment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deployment</h4>
+<p><a href="Resources/uml/TrainigBoxDeployment.uml">Training Box Deployment UML Diagram</a>
+<a href="Resources/TrainingBoxDeployment.uml.png" target="_blank"><img src="Resources/TrainingBoxDeployment.uml.png" alt="Training Box" style="max-width:100%;"></a></p>
+<p>Operaional Sequence is shown here:</p>
+<h4>
+<a id="user-content-sequence" class="anchor" href="#sequence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sequence</h4>
+<p><a href="Resources/uml/Resources/uml/TrainSequence.uml">Training Sequence UML Diagram</a>
+<a href="Resources/TrainSequence.uml.png" target="_blank"><img src="Resources/TrainSequence.uml.png" alt="Training" style="max-width:100%;"></a></p>
+<h4>
+<a id="user-content-identity-match" class="anchor" href="#identity-match" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Identity Match</h4>
+<p>Crawling is performed over multiple resources. We need the way to properly match identities and merge their profiles.
+We might use email or phone as unique intentifier, since name won't always work.
+Since some resources might not return unique identifier we use AI comparing fiels.</p>
+<p><a href="Resources/uml/IdentityMatchSequece.uml">Identity Match Sequence</a>
+<a href="Resources/IdentityMatchSequence.uml.png" target="_blank"><img src="Resources/IdentityMatchSequence.uml.png" alt="Identity Match Sequence Diagram" style="max-width:100%;"></a></p>
+<p>Training box will be used most of the time to train all special purposes models using probably slightly modified Inception v3 alorigthm.
+Traning it from scratch is time consuming operation, however once all special purpose algos and models are trained it could be put down to save hosting cost and be running only once it's needed next time
+for next alorithm/model train. We will apparently have several purposes (so models and algos) depending on type of information consumers need to receive as the result of their searches.</p>
+<h2>
+<a id="user-content-evaluation-box" class="anchor" href="#evaluation-box" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Evaluation Box</h2>
+<p>Evaluation boxes will also be used all the time, they will serve large datasets searching for appropriate data according to consumer's search.</p>
+<p><a href="Resources/uml/EvaluationBoxDeployment.uml">Evaluation Box Deployment UML Diagram</a>
+<a href="Resources/EvaluationBoxDeployment.uml.png" target="_blank"><img src="Resources/EvaluationBoxDeployment.uml.png" alt="Evalutaion Box" style="max-width:100%;"></a></p>
+<h2>
+<a id="user-content-system-requirements" class="anchor" href="#system-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>System Requirements</h2>
+<h3>
+<a id="user-content-system-hardware-requirements" class="anchor" href="#system-hardware-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>System hardware requirements</h3>
+<p>Here are system software requirements</p>
+<ul>
+<li>Training box:
+<em>is distributed among 5 high performant 128Gb/10TB 6-12 Nvidia GPU machines</em>
+</li>
+<li>Evaluation boxes:
+<em>depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)</em>
+</li>
+</ul>
+<h3>
+<a id="user-content-system-software-requirements" class="anchor" href="#system-software-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>System Software Requirements</h3>
+<p>Here are system software requirements</p>
+<ul>
+<li>OS: Amazon/Ubuntu Linux with recent 4.x kernel</li>
+<li>DB: MongoDB 3.3+</li>
+<li>AI: Google TenserFlow 1.x</li>
+<li>JVM: v1.8 or higher</li>
+</ul>
+

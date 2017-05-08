@@ -65,15 +65,15 @@ Persons profile looks like this:
 System support over 240 million profiles of US citizens.
 
 ## Requirements
-    - Scalability:
-      System architecture should be scalable and high performant (in terms of traininig and evaluation).
-    - High Performance: 
-      Since there will be multiple concurrent searches, and every search will take valuable amount of time, previous results should be cached.
-      Cache will be wiped every time main database of people profiles is updated
-      We should monitor for most frequent searches and cache results only for them, while searches performed one or few times won't be cached to save memory and drive space
+- Scalability:
+System architecture should be scalable and high performant (in terms of traininig and evaluation).
+- High Performance: 
+Since there will be multiple concurrent searches, and every search will take valuable amount of time, previous results should be cached.
+Cache will be wiped every time main database of people profiles is updated
+We should monitor for most frequent searches and cache results only for them, while searches performed one or few times won't be cached to save memory and drive space
     
 ## Other requirements:
-    - Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for real-time evaluation).
+- Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for real-time evaluation).
 
 [System Deployment UML Diagram](Resources/uml/SystemDeployment.uml)
 ![Deployment Diagram](Resources/SystemDeployment.uml.png)
