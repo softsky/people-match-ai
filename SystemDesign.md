@@ -101,6 +101,15 @@ Operaional Sequence is shown here:
 [Training Sequence UML Diagram](Resources/uml/Resources/uml/TrainSequence.uml)
 ![Training](Resources/TrainSequence.uml.png)
 
+#### Identity Match
+Crawling is performed over multiple resources. We need the way to properly match identities and merge their profiles.
+We might use email or phone as unique intentifier, since name won't always work.
+Since some resources might not return unique identifier we use AI comparing fiels.
+
+[Identity Match Sequence](Resources/uml/IdentityMatchSequece.uml)
+![Identity Match Sequence Diagram](Resources/IdentityMatchSequece.uml.png)
+
+
 
 Training box will be used most of the time to train all special purposes models using probably slightly modified Inception v3 alorigthm. 
 Traning it from scratch is time consuming operation, however once all special purpose algos and models are trained it could be put down to save hosting cost and be running only once it's needed next time 
