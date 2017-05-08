@@ -114,13 +114,16 @@ Evaluation boxes will also be used all the time, they will serve large datasets 
 ## System Requirements
 
 ### System hardware requirements
-
-    - training box is distributed among 5 high performant 128Gb/10TB 6-12 Nvidia GPU machines
-    - evaluation boxes: depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)
+Here are system software requirements 
+- Training box:
+  ~is distributed among 5 high performant 128Gb/10TB 6-12 Nvidia GPU machines~
+- Evaluation boxes: 
+  ~depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)~
     
 ### System Software Requirements
 
-    - OS: Amazon/Ubuntu Linux with recent 4.x kernel
-    - DB: MongoDB 3.3+
-    - AI: Google TenserFlow 1.x
-    - JVM: v1.8 or higher
+Here are system software requirements 
+- OS: Amazon/Ubuntu Linux with recent 4.x kernel
+- DB: MongoDB 3.3+
+- AI: Google TenserFlow 1.x
+- JVM: v1.8 or higher
