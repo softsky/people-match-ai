@@ -1,0 +1,3060 @@
+{
+	"_id": {
+		"$oid": "58ea248524dce09f41209710"
+	},
+	"searchResult": [
+		{
+			"otherEmails": [],
+			"country": "United States",
+			"source": "PeopleData",
+			"lastUpdated": "2016-09-26T16:54:28Z",
+			"id": "AVdO_GcbPKMaPmPU7jEY",
+			"state": "arizona",
+			"probability": 1,
+			"query": "MANUAL_REQUEST",
+			"firstName": "John",
+			"phone": "1-520-247-9050",
+			"lastName": "Soukup",
+			"stateAbbr": "AZ",
+			"activity": null,
+			"gender": "M",
+			"city": "Tucson",
+			"result": {
+				"resultStatus": "OK",
+			},
+			"term": "[1]",
+			"mergedIdentities": [
+				{
+					"source": "EX",
+					"datetime": "2016-06-23T00:00:00Z",
+					"lname": "Soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "c.l.soukup@comcast.net",
+					"fname": "John",
+					"address": {
+						"zip": "85749",
+						"city": "Tucson",
+						"streetAddress": "9352 E Vallarta Trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"ip": [
+						"71.226.126.234"
+					],
+					"phone": [
+						"1-520-247-9050"
+					],
+				},
+				{
+					"lname": "SOUKUP",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"fname": "JOHN",
+					"address": {
+						"zip": "85749",
+						"city": "TUCSON",
+						"streetAddress": "9352 E VALLARTA TRL",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"birth": "1958-10-31T00:00:00Z",
+					"phone": [
+						"1-520-323-9447"
+					],
+				},
+				{
+					"source": "people_data_family",
+					"datetime": "2016-03-14T00:00:00Z",
+					"lname": "SOUKUP",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "c.l.soukup@comcast.net",
+					"fname": "JOHN",
+					"address": {
+						"zip": "85749",
+						"city": "TUCSON",
+						"streetAddress": "9352 E VALLARTA TRL",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"phone": [
+						"5202479050"
+					],
+				},
+				{
+					"source": "usaonlinepayday.com",
+					"datetime": "2016-07-05T00:16:00Z",
+					"lname": "soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "j.j.soukup@worldnet.att.net",
+					"fname": "john",
+					"address": {
+						"zip": "85749",
+						"city": "tucson",
+						"streetAddress": "9352 e vallarta trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"ip": [
+						"63.163.148.215"
+					],
+					"phone": [
+						"1-520-247-9050"
+					],
+					"source": "usaonlinepayday.com",
+					"datetime": "2016-03-15T12:16:00Z",
+					"lname": "soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "j.j.soukup@worldnet.att.net",
+					"fname": "john",
+					"address": {
+						"zip": "85749",
+						"city": "tucson",
+						"streetAddress": "9352 e vallarta trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"ip": [
+						"63.163.148.215"
+					],
+					"phone": [
+						"1-520-247-9050"
+					],
+				},
+				{
+					"source": "wp_arizona.part04",
+					"datetime": "2016-02-22T00:00:00Z",
+					"lname": "Soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"fname": "John",
+					"address": {
+						"zip": "85749-9672",
+						"city": "Tucson",
+						"streetAddress": "9352 E Vallarta Trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"phone": [
+						"1-520-760-0319"
+					],
+				},
+				{
+					"source": "AZ3",
+					"datetime": "2016-02-22T00:00:00Z",
+					"lname": "SOUKUP",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"fname": "JOHN",
+					"address": {
+						"zip": "85749",
+						"city": "TUCSON",
+						"streetAddress": "9352 E VALLARTA TRL",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"phone": [
+						"1-520-323-9447"
+					],
+				},
+				{
+					"source": "usaonlinepayday.com",
+					"datetime": "2016-01-13T00:16:00Z",
+					"lname": "soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "j.j.soukup@worldnet.att.net",
+					"fname": "john",
+					"address": {
+						"zip": "85749",
+						"city": "tucson",
+						"streetAddress": "9352 e vallarta trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"ip": [
+						"63.163.148.215"
+					],
+					"phone": [
+						"1-520-247-9050"
+					],
+				},
+				{
+					"source": "washingtonpost.com",
+					"datetime": "2015-12-30T12:46:00Z",
+					"lname": "Soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "j.j.soukup@worldnet.att.net",
+					"fname": "John",
+					"address": {
+						"zip": "85749",
+						"city": "Tucson",
+						"streetAddress": "9352 E Vallarta Trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"ip": [
+						"63.163.148.215"
+					],
+					"phone": [
+						"1-520-247-9050"
+					],
+				},
+				{
+					"source": "washingtonpost.com",
+					"datetime": "2014-11-06T12:46:00Z",
+					"lname": "Soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "j.j.soukup@worldnet.att.net",
+					"fname": "John",
+					"address": {
+						"zip": "85749",
+						"city": "Tucson",
+						"streetAddress": "9352 E Vallarta Trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"ip": [
+						"63.163.148.215"
+					],
+					"phone": [
+						"1-520-247-9050"
+					],
+				},
+				{
+					"source": "usaonlinepayday.com",
+					"datetime": "2014-05-02T00:16:00Z",
+					"lname": "soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "j.j.soukup@worldnet.att.net",
+					"fname": "john",
+					"address": {
+						"zip": "85749",
+						"city": "tucson",
+						"streetAddress": "9352 e vallarta trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"ip": [
+						"63.163.148.215"
+					],
+					"phone": [
+						"1-520-247-9050"
+					],
+				},
+				{
+					"emailDisposable": null,
+					"gender": null,
+					"emailResult": null,
+					"latitude": null,
+					"mname": null,
+					"source": "usaonlinepayday.com",
+					"srcFileName": null,
+					"suffix": null,
+					"datetime": "2014-05-02T00:00:00Z",
+					"lname": "soukup",
+					"emailReason": null,
+					"registrationDate": null,
+					"company": null,
+					"details": null,
+					"suiteNumber": null,
+					"familyDetails": null,
+					"_version": 0,
+					"anotherAddresses": null,
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "j.j.soukup@worldnet.att.net",
+					"countyName": null,
+					"longitude": null,
+					"fname": "john",
+					"website": null,
+					"address": {
+						"zip": "85749",
+						"country": null,
+						"address2": null,
+						"city": "tucson",
+						"streetAddress": "9352 e vallarta trl",
+						"state": "az",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"emailAcceptAll": null,
+					"mergeId": null,
+					"ip": [
+						"63.163.148.215"
+					],
+					"birth": null,
+					"relationId": null,
+					"homeValue": null,
+					"groupname": null,
+					"isCellPhone": null,
+					"version": null,
+					"versionPart1": null,
+					"calcGender": null,
+					"carrier": null,
+					"emailStatus": null,
+					"nationality": null,
+					"phone": [
+						"1-520-247-9050"
+					],
+					"_id": null,
+					"job": null,
+					"age": null,
+					"maritalStatus": null,
+					"zip_4": null
+				},
+				{
+					"emailDisposable": null,
+					"gender": null,
+					"emailResult": null,
+					"latitude": null,
+					"mname": null,
+					"source": "washingtonpost.com",
+					"srcFileName": null,
+					"suffix": null,
+					"datetime": "2013-03-15T12:46:00Z",
+					"lname": "Soukup",
+					"emailReason": null,
+					"registrationDate": null,
+					"company": null,
+					"details": null,
+					"suiteNumber": null,
+					"familyDetails": null,
+					"_version": 0,
+					"anotherAddresses": null,
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "j.j.soukup@worldnet.att.net",
+					"countyName": null,
+					"longitude": null,
+					"fname": "John",
+					"website": null,
+					"address": {
+						"zip": "85749",
+						"country": null,
+						"address2": null,
+						"city": "Tucson",
+						"streetAddress": "9352 E Vallarta Trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"emailAcceptAll": null,
+					"mergeId": null,
+					"ip": [
+						"63.163.148.215"
+					],
+					"birth": null,
+					"relationId": null,
+					"homeValue": null,
+					"groupname": null,
+					"isCellPhone": null,
+					"version": null,
+					"versionPart1": null,
+					"calcGender": null,
+					"carrier": null,
+					"emailStatus": null,
+					"nationality": null,
+					"phone": [
+						"1-520-247-9050"
+					],
+					"_id": null,
+					"job": null,
+					"age": null,
+					"maritalStatus": null,
+					"zip_4": null
+				},
+				{
+					"emailDisposable": null,
+					"gender": null,
+					"emailResult": null,
+					"latitude": null,
+					"mname": null,
+					"source": "washingtonpost.com",
+					"srcFileName": null,
+					"suffix": null,
+					"datetime": "2013-03-15T00:00:00Z",
+					"lname": "Soukup",
+					"emailReason": null,
+					"registrationDate": null,
+					"company": null,
+					"details": null,
+					"suiteNumber": null,
+					"familyDetails": null,
+					"_version": 0,
+					"anotherAddresses": null,
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "j.j.soukup@worldnet.att.net",
+					"countyName": null,
+					"longitude": null,
+					"fname": "John",
+					"website": null,
+					"address": {
+						"zip": "85749",
+						"country": null,
+						"address2": null,
+						"city": "Tucson",
+						"streetAddress": "9352 E Vallarta Trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"emailAcceptAll": null,
+					"mergeId": null,
+					"ip": [
+						"63.163.148.215"
+					],
+					"birth": null,
+					"relationId": null,
+					"homeValue": null,
+					"groupname": null,
+					"isCellPhone": null,
+					"version": null,
+					"versionPart1": null,
+					"calcGender": null,
+					"carrier": null,
+					"emailStatus": null,
+					"nationality": null,
+					"phone": [
+						"1-520-247-9050"
+					],
+					"_id": null,
+					"job": null,
+					"age": null,
+					"maritalStatus": null,
+					"zip_4": null
+				},
+				{
+					"emailDisposable": null,
+					"gender": null,
+					"emailResult": null,
+					"latitude": null,
+					"mname": null,
+					"source": null,
+					"srcFileName": null,
+					"suffix": null,
+					"datetime": null,
+					"lname": "Soukup",
+					"emailReason": null,
+					"registrationDate": null,
+					"company": null,
+					"details": null,
+					"suiteNumber": null,
+					"familyDetails": null,
+					"_version": 0,
+					"anotherAddresses": null,
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "john.soukup@go.com",
+					"countyName": null,
+					"longitude": null,
+					"fname": "John",
+					"website": null,
+					"address": {
+						"zip": "85775",
+						"country": null,
+						"address2": null,
+						"city": "TUCSON",
+						"streetAddress": "9352 E VALLARTA TRL",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"emailAcceptAll": null,
+					"mergeId": null,
+					"ip": [],
+					"birth": null,
+					"relationId": null,
+					"homeValue": null,
+					"groupname": null,
+					"isCellPhone": null,
+					"version": null,
+					"versionPart1": null,
+					"calcGender": null,
+					"carrier": null,
+					"emailStatus": null,
+					"nationality": null,
+					"phone": [
+						"1-520-247-9365"
+					],
+					"_id": null,
+					"job": null,
+					"age": null,
+					"maritalStatus": null,
+					"zip_4": null
+				},
+				{
+					"emailDisposable": null,
+					"gender": null,
+					"emailResult": null,
+					"latitude": null,
+					"mname": null,
+					"source": null,
+					"srcFileName": null,
+					"suffix": null,
+					"datetime": null,
+					"lname": "SOUKUP",
+					"emailReason": null,
+					"registrationDate": null,
+					"company": null,
+					"details": null,
+					"suiteNumber": null,
+					"familyDetails": null,
+					"_version": 0,
+					"anotherAddresses": null,
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": null,
+					"countyName": null,
+					"longitude": null,
+					"fname": "JOHN",
+					"website": null,
+					"address": {
+						"zip": "85749-9672",
+						"country": null,
+						"address2": null,
+						"city": "TUCSON",
+						"streetAddress": "9352 E VALLARTA TRL",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"emailAcceptAll": null,
+					"mergeId": null,
+					"ip": [],
+					"birth": null,
+					"relationId": null,
+					"homeValue": null,
+					"groupname": null,
+					"isCellPhone": null,
+					"version": null,
+					"versionPart1": null,
+					"calcGender": null,
+					"carrier": null,
+					"emailStatus": null,
+					"nationality": null,
+					"phone": [
+						"1-520-749-1317"
+					],
+					"_id": null,
+					"job": null,
+					"age": null,
+					"maritalStatus": null,
+					"zip_4": null
+				}
+			],
+			"email": "j.j.soukup@worldnet.att.net",
+			"birthDay": "1958-10-31T00:00:00Z",
+			"address": "9352 E Vallarta Trl",
+			"salary_LowPriority2": null,
+			"salary_LowPriority1": null,
+			"ageTentative": null,
+			"resultStatus": "OK",
+			"actionGroupName": "2016_09_26_manual_request",
+			"rdi": null,
+			"advancedBackgroundChecks": [
+				{
+					"name": "Vehicle Model",
+					"value": "FUSION"
+				},
+				{
+					"name": "Vehicle Make",
+					"value": "FORD"
+				},
+				{
+					"name": "Vehicle Year",
+					"value": "2010"
+				}
+			],
+			"otherPhones": [],
+			"location": null,
+			"middleName": null,
+			"websites": [],
+			"validationEmail": null,
+			"age": null,
+			"username": null
+		},
+		{
+			"otherEmails": [],
+			"country": "United States",
+			"dateOfRegistration": "2013-01-01T00:00:00Z",
+			"keyTopics": [],
+			"educations": [],
+			"zip4": null,
+			"source": "Yelp",
+			"salary": null,
+			"branch": null,
+			"validationPhone": null,
+			"cacheId": "6382bd06-dfca-4355-b3a6-93a9739dc5ce",
+			"empty": false,
+			"skills": [],
+			"lastUpdated": "2016-09-07T22:33:04Z",
+			"companies": [],
+			"currentJob": null,
+			"historicalContact": null,
+			"familyAdditionalDetails": [],
+			"id": null,
+			"state": "arizona",
+			"lat": null,
+			"allSentences": null,
+			"zip": null,
+			"lng": null,
+			"habitations": [],
+			"probability": 0.63,
+			"ip": [],
+			"query": "MANUAL_REQUEST",
+			"probabilityByLinkedin": 0,
+			"experiences": [],
+			"profileUrlLinkedin": null,
+			"deepdataPerson": null,
+			"firstName": "John",
+			"latLngType": null,
+			"nationality": null,
+			"phone": null,
+			"counties": [],
+			"profileUrl": "http://www.yelp.com/user_details?userid=2i4PucH-vp8pV9-cMYD3lA",
+			"lastName": "Soukup",
+			"stateAbbr": "AZ",
+			"regions": [],
+			"activity": {
+				"contactFollowingCount": null,
+				"reviews": {
+					"reviewList": [
+						{
+							"date": "2016-01-01T00:00:00Z",
+							"product": null,
+							"business": {
+								"addresses": [
+									{
+										"name": "street",
+										"value": "2001 E 15th St"
+									},
+									{
+										"name": "city",
+										"value": "Tucson, AZ 85719"
+									}
+								],
+								"name": "Spraymaster Auto Body \u0026 Paint Shop",
+								"categories": [
+									{
+										"name": "Body Shops",
+										"value": null
+									}
+								]
+							},
+							"linkUrl": null,
+							"votes": [],
+							"text": "Richard Acosta is as professional as they come and a man of his word. We had serious front end damage to our 1999 Land Cruiser and parts were hard to come by. Richard and his crew made it look like new. The color matched perfectly and he made sure we were satisfied and happy. His first priority is the customer. If you need any paint work or body work don't take my word for it. Meet Richard at Spraymasters and you'll know.",
+							"title": null
+						}
+					],
+					"rank": null,
+					"votes": [
+						{
+							"count": 1,
+							"type": ""
+						}
+					],
+					"reviewsCount": 1,
+					"reviewBusinesses": []
+				},
+				"contactFollowerCount": null,
+				"contactsCount": null,
+				"messages": null,
+				"friendsCount": 1,
+				"likeMsgCount": null,
+				"msgCount": null
+			},
+			"gender": null,
+			"city": "Tucson",
+			"description": null,
+			"pictures": [
+				{
+					"name": null,
+					"value": "http://www.yelp.com//s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/ebc2a2e28267/assets/img/default_avatars/user_large_square.png"
+				}
+			],
+			"result": {
+				"resultStatus": "OK",
+				"resultMsg": ""
+			},
+			"nickname": null,
+			"term": "[\"John S.'s\" Tucson, AZ]",
+			"mergedIdentities": [],
+			"email": "c.l.soukup@comcast.net",
+			"birthDay": null,
+			"address": "9352 E Vallarta Trl",
+			"salary_LowPriority2": null,
+			"salary_LowPriority1": null,
+			"ageTentative": null,
+			"additionalDetails": [],
+			"resultStatus": "OK",
+			"actionGroupName": "2016_09_07_manual_request",
+			"rdi": null,
+			"otherPhones": [],
+			"location": null,
+			"middleName": null,
+			"websites": [],
+			"validationEmail": null,
+			"age": null,
+			"username": "John S."
+		},
+		{
+			"otherEmails": [],
+			"country": "United States",
+			"dateOfRegistration": "2014-11-01T00:00:00Z",
+			"keyTopics": [],
+			"educations": [],
+			"zip4": null,
+			"source": "Yelp",
+			"salary": null,
+			"branch": null,
+			"validationPhone": null,
+			"cacheId": "6382bd06-dfca-4355-b3a6-93a9739dc5ce",
+			"empty": false,
+			"skills": [],
+			"lastUpdated": "2016-09-07T22:33:05Z",
+			"companies": [],
+			"currentJob": null,
+			"historicalContact": null,
+			"familyAdditionalDetails": [],
+			"id": null,
+			"state": "arizona",
+			"lat": null,
+			"allSentences": null,
+			"zip": null,
+			"lng": null,
+			"habitations": [],
+			"probability": 0.63,
+			"ip": [],
+			"query": "MANUAL_REQUEST",
+			"probabilityByLinkedin": 0,
+			"experiences": [],
+			"profileUrlLinkedin": null,
+			"deepdataPerson": null,
+			"firstName": "John",
+			"latLngType": null,
+			"nationality": null,
+			"phone": null,
+			"counties": [],
+			"profileUrl": "https://www.yelp.com/user_details?userid=Pb5g9c7loWwhlTd47ukQig",
+			"lastName": "Soukup",
+			"stateAbbr": "AZ",
+			"regions": [],
+			"activity": {
+				"contactFollowingCount": null,
+				"reviews": {
+					"reviewList": [
+						{
+							"date": "2016-01-07T00:00:00Z",
+							"product": null,
+							"business": {
+								"addresses": [
+									{
+										"name": "street",
+										"value": "5004 E Broadway Blvd"
+									},
+									{
+										"name": "city",
+										"value": "Tucson, AZ 85711"
+									}
+								],
+								"name": "Wings Over Broadway",
+								"categories": [
+									{
+										"name": "Chicken Wings",
+										"value": null
+									}
+								]
+							},
+							"linkUrl": null,
+							"votes": [],
+							"text": "ATTENTION: UNETHICAL BUSINESS. THIS PLACE PRACTICES PRICE GOUGING. Seems like they will do anything for an extra dollar. Very unhelpful on the phone, and also very curt, to the point of being rude. I have patronized this restaurant multiple times but will probably not return after my experience on Super Bowl Sunday.",
+							"title": null
+						},
+						{
+							"date": "2015-01-01T00:00:00Z",
+							"product": null,
+							"business": {
+								"addresses": [
+									{
+										"name": "street",
+										"value": "5410 E Broadway Blvd"
+									},
+									{
+										"name": "city",
+										"value": "Tucson, AZ 85711"
+									}
+								],
+								"name": "Olive Garden Italian Restaurant",
+								"categories": [
+									{
+										"name": "Italian",
+										"value": null
+									},
+									{
+										"name": "Salad",
+										"value": null
+									},
+									{
+										"name": "Wine Bars",
+										"value": null
+									}
+								]
+							},
+							"linkUrl": null,
+							"votes": [],
+							"text": "Olive Garden used to be good but the quality has really taken a turn for the worse over the last few years. The breadsticks taste like they were previously frozen and are unnaturally chewy. Spaghetti with meat sauce was fair. The salad was decent, even though it's just ice berg lettuce with a high fructose corn syrup dressing. I got the gnocchi chicken soup, which is probably the most awful soup I've ever tasted. It was like seawater with cream in it. The gnocchi were flavorless. The chicken was gristly. Overall, this was a very disappointing meal and it's overpriced as well. I will never be visiting another Olive Garden again.",
+							"title": null
+						},
+						{
+							"date": "2015-01-18T00:00:00Z",
+							"product": null,
+							"business": {
+								"addresses": [
+									{
+										"name": "street",
+										"value": "68 N. Harrison Road"
+									},
+									{
+										"name": "city",
+										"value": "Tucson, AZ 85748"
+									}
+								],
+								"name": "Buffalo Wild Wings",
+								"categories": [
+									{
+										"name": "American (Traditional)",
+										"value": null
+									},
+									{
+										"name": "Chicken Wings",
+										"value": null
+									},
+									{
+										"name": "Sports Bars",
+										"value": null
+									}
+								]
+							},
+							"linkUrl": null,
+							"votes": [],
+							"text": "Atmosphere overall was good. Music wasn't too loud. However, extremely slow service. I think our waiter was basically retarded. Wings were cooked well, but there was VERY little sauce on them and you could barely taste the favors. The fries were finally brought out 15 minutes after we got the wings. Took literally 30 minutes to bring the check afterwe asked them. Very disappointing. This chain has gone down hill.",
+							"title": null
+						}
+					],
+					"rank": null,
+					"votes": [
+						{
+							"count": 2,
+							"type": ""
+						}
+					],
+					"reviewsCount": 3,
+					"reviewBusinesses": []
+				},
+				"contactFollowerCount": null,
+				"contactsCount": null,
+				"messages": null,
+				"friendsCount": 0,
+				"likeMsgCount": null,
+				"msgCount": null
+			},
+			"gender": null,
+			"city": "Tucson",
+			"description": null,
+			"pictures": [
+				{
+					"name": null,
+					"value": "http://www.yelp.com//s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/ebc2a2e28267/assets/img/default_avatars/user_large_square.png"
+				}
+			],
+			"result": {
+				"resultStatus": "OK",
+				"resultMsg": ""
+			},
+			"nickname": null,
+			"term": "[\"John S.'s\" Tucson, AZ]",
+			"mergedIdentities": [],
+			"email": "c.l.soukup@comcast.net",
+			"birthDay": null,
+			"address": "9352 E Vallarta Trl",
+			"salary_LowPriority2": null,
+			"salary_LowPriority1": null,
+			"ageTentative": null,
+			"additionalDetails": [
+				{
+					"name": "Stats",
+					"value": "Bookmarks                 10"
+				}
+			],
+			"resultStatus": "OK",
+			"actionGroupName": "2016_09_07_manual_request",
+			"rdi": null,
+			"otherPhones": [],
+			"location": null,
+			"middleName": null,
+			"websites": [],
+			"validationEmail": null,
+			"age": null,
+			"username": "John S."
+		},
+		{
+			"otherEmails": [],
+			"country": "United States",
+			"dateOfRegistration": "2016-01-01T00:00:00Z",
+			"keyTopics": [],
+			"educations": [],
+			"zip4": null,
+			"source": "Yelp",
+			"salary": null,
+			"branch": null,
+			"validationPhone": null,
+			"cacheId": "6382bd06-dfca-4355-b3a6-93a9739dc5ce",
+			"empty": false,
+			"skills": [],
+			"lastUpdated": "2016-09-07T22:33:06Z",
+			"companies": [],
+			"currentJob": null,
+			"historicalContact": null,
+			"familyAdditionalDetails": [],
+			"id": null,
+			"state": "arizona",
+			"lat": null,
+			"allSentences": null,
+			"zip": null,
+			"lng": null,
+			"habitations": [],
+			"probability": 0.63,
+			"ip": [],
+			"query": "MANUAL_REQUEST",
+			"probabilityByLinkedin": 0,
+			"experiences": [],
+			"profileUrlLinkedin": null,
+			"deepdataPerson": null,
+			"firstName": "John",
+			"latLngType": null,
+			"nationality": null,
+			"phone": null,
+			"counties": [],
+			"profileUrl": "http://www.yelp.com/user_details?userid=eHVCsQ0STBNSMt114r9DgQ",
+			"lastName": "Soukup",
+			"stateAbbr": "AZ",
+			"regions": [],
+			"activity": {
+				"contactFollowingCount": null,
+				"reviews": {
+					"reviewList": [
+						{
+							"date": "2016-01-27T00:00:00Z",
+							"product": null,
+							"business": {
+								"addresses": [
+									{
+										"name": "street",
+										"value": "5510 E Broadway Blvd"
+									},
+									{
+										"name": "city",
+										"value": "Tucson, AZ 85711"
+									}
+								],
+								"name": "BJ’s Restaurant \u0026 Brewhouse",
+								"categories": [
+									{
+										"name": "Breweries",
+										"value": null
+									},
+									{
+										"name": "American (New)",
+										"value": null
+									},
+									{
+										"name": "Pizza",
+										"value": null
+									}
+								]
+							},
+							"linkUrl": null,
+							"votes": [],
+							"text": "Atmosphere, food and service is good but not cheap. $$ not.Also watching multiple games on their big screen is terrible. They do not use the whole screen surface. They configure the screen to where there is one main screen with 3 small ones. Bad if you if your NFL TIX game is not the main one showing. However, it works with no complains if the 'Cats are playing.",
+							"title": null
+						},
+						{
+							"date": "2016-01-27T00:00:00Z",
+							"product": null,
+							"business": {
+								"addresses": [
+									{
+										"name": "street",
+										"value": "250 S Craycroft Rd"
+									},
+									{
+										"name": "city",
+										"value": "Tucson, AZ 85711"
+									}
+								],
+								"name": "Tilted Kilt Pub \u0026 Eatery",
+								"categories": [
+									{
+										"name": "Pubs",
+										"value": null
+									},
+									{
+										"name": "American (Traditional)",
+										"value": null
+									}
+								]
+							},
+							"linkUrl": null,
+							"votes": [],
+							"text": "I've been here before several times and enjoyed the atmosphere, food and service. However, the last time we were there we were cut-off and shown to the door. Been there for couple of hours, our shift-changing waitress Lindsy was friendly at first introducing herself. Later we innocently got her name wrong signaling for her and she overreacted. She was quick at the trigger and should have used more discretion.",
+							"title": null
+						}
+					],
+					"rank": null,
+					"votes": [],
+					"reviewsCount": 2,
+					"reviewBusinesses": []
+				},
+				"contactFollowerCount": null,
+				"contactsCount": null,
+				"messages": null,
+				"friendsCount": 0,
+				"likeMsgCount": null,
+				"msgCount": null
+			},
+			"gender": null,
+			"city": "Tucson",
+			"description": null,
+			"pictures": [
+				{
+					"name": null,
+					"value": "http://www.yelp.com//s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/ebc2a2e28267/assets/img/default_avatars/user_large_square.png"
+				}
+			],
+			"result": {
+				"resultStatus": "OK",
+				"resultMsg": ""
+			},
+			"nickname": null,
+			"term": "[\"John S.'s\" Tucson, AZ]",
+			"mergedIdentities": [],
+			"email": "c.l.soukup@comcast.net",
+			"birthDay": null,
+			"address": "9352 E Vallarta Trl",
+			"salary_LowPriority2": null,
+			"salary_LowPriority1": null,
+			"ageTentative": null,
+			"additionalDetails": [],
+			"resultStatus": "OK",
+			"actionGroupName": "2016_09_07_manual_request",
+			"rdi": null,
+			"otherPhones": [],
+			"location": null,
+			"middleName": null,
+			"websites": [],
+			"validationEmail": null,
+			"age": null,
+			"username": "John S."
+		},
+		{
+			"otherEmails": [],
+			"country": "United States",
+			"dateOfRegistration": "2016-05-01T00:00:00Z",
+			"keyTopics": [],
+			"educations": [],
+			"zip4": null,
+			"source": "Yelp",
+			"salary": null,
+			"branch": null,
+			"validationPhone": null,
+			"cacheId": "6382bd06-dfca-4355-b3a6-93a9739dc5ce",
+			"empty": false,
+			"skills": [],
+			"lastUpdated": "2016-09-07T22:33:07Z",
+			"companies": [],
+			"currentJob": null,
+			"historicalContact": null,
+			"familyAdditionalDetails": [],
+			"id": null,
+			"state": "arizona",
+			"lat": null,
+			"allSentences": null,
+			"zip": null,
+			"lng": null,
+			"habitations": [],
+			"probability": 0.63,
+			"ip": [],
+			"query": "MANUAL_REQUEST",
+			"probabilityByLinkedin": 0,
+			"experiences": [],
+			"profileUrlLinkedin": null,
+			"deepdataPerson": null,
+			"firstName": "John",
+			"latLngType": null,
+			"nationality": null,
+			"phone": null,
+			"counties": [],
+			"profileUrl": "http://www.yelp.com/user_details?userid=jmC8sKEDALheN5f93To8Jw",
+			"lastName": "Soukup",
+			"stateAbbr": "AZ",
+			"regions": [],
+			"activity": {
+				"contactFollowingCount": null,
+				"reviews": {
+					"reviewList": [
+						{
+							"date": "2016-01-02T00:00:00Z",
+							"product": null,
+							"business": {
+								"addresses": [
+									{
+										"name": "street",
+										"value": "2820 W Valencia Rd"
+									},
+									{
+										"name": "city",
+										"value": "Tucson, AZ 85746"
+									}
+								],
+								"name": "Valencia Ace Hardware",
+								"categories": [
+									{
+										"name": "Hardware Stores",
+										"value": null
+									}
+								]
+							},
+							"linkUrl": null,
+							"votes": [],
+							"text": "BOYCOTT THIS LOCATION. IT'S owed by bigot racist owners. I find it ironic that the \"Christian\" owners of this store are hateful against Hispanics when their store is IN THE HEART of the Hispanic community lol. Seriously boycott these guys.Los dueños son unos pinches racistas, no compren aqui.",
+							"title": null
+						}
+					],
+					"rank": null,
+					"votes": [],
+					"reviewsCount": 1,
+					"reviewBusinesses": []
+				},
+				"contactFollowerCount": null,
+				"contactsCount": null,
+				"messages": null,
+				"friendsCount": 0,
+				"likeMsgCount": null,
+				"msgCount": null
+			},
+			"gender": null,
+			"city": "Tucson",
+			"description": null,
+			"pictures": [
+				{
+					"name": null,
+					"value": "http://www.yelp.com//s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/ebc2a2e28267/assets/img/default_avatars/user_large_square.png"
+				}
+			],
+			"result": {
+				"resultStatus": "OK",
+				"resultMsg": ""
+			},
+			"nickname": null,
+			"term": "[\"John S.'s\" Tucson, AZ]",
+			"mergedIdentities": [],
+			"email": "c.l.soukup@comcast.net",
+			"birthDay": null,
+			"address": "9352 E Vallarta Trl",
+			"salary_LowPriority2": null,
+			"salary_LowPriority1": null,
+			"ageTentative": null,
+			"additionalDetails": [],
+			"resultStatus": "OK",
+			"actionGroupName": "2016_09_07_manual_request",
+			"rdi": null,
+			"otherPhones": [],
+			"location": null,
+			"middleName": null,
+			"websites": [],
+			"validationEmail": null,
+			"age": null,
+			"username": "John S."
+		},
+		{
+			"otherEmails": [],
+			"country": "United States",
+			"dateOfRegistration": "2014-05-01T00:00:00Z",
+			"keyTopics": [],
+			"educations": [],
+			"zip4": null,
+			"source": "Yelp",
+			"salary": null,
+			"branch": null,
+			"validationPhone": null,
+			"cacheId": "6382bd06-dfca-4355-b3a6-93a9739dc5ce",
+			"empty": false,
+			"skills": [],
+			"lastUpdated": "2016-09-07T22:33:07Z",
+			"companies": [],
+			"currentJob": null,
+			"historicalContact": null,
+			"familyAdditionalDetails": [],
+			"id": null,
+			"state": "arizona",
+			"lat": null,
+			"allSentences": null,
+			"zip": null,
+			"lng": null,
+			"habitations": [],
+			"probability": 0.63,
+			"ip": [],
+			"query": "MANUAL_REQUEST",
+			"probabilityByLinkedin": 0,
+			"experiences": [],
+			"profileUrlLinkedin": null,
+			"deepdataPerson": null,
+			"firstName": "John",
+			"latLngType": null,
+			"nationality": null,
+			"phone": null,
+			"counties": [],
+			"profileUrl": "http://www.yelp.com/user_details?userid=RpH5LW8kZaKMe4FUfwwH0w",
+			"lastName": "Soukup",
+			"stateAbbr": "AZ",
+			"regions": [],
+			"activity": {
+				"contactFollowingCount": null,
+				"reviews": {
+					"reviewList": [
+						{
+							"date": "2015-01-13T00:00:00Z",
+							"product": null,
+							"business": {
+								"addresses": [
+									{
+										"name": "street",
+										"value": "73 E Pennington St"
+									},
+									{
+										"name": "city",
+										"value": "Tucson, AZ 85701"
+									}
+								],
+								"name": "Urban Fresh",
+								"categories": [
+									{
+										"name": "Vegan",
+										"value": null
+									},
+									{
+										"name": "Juice Bars \u0026 Smoothies",
+										"value": null
+									}
+								]
+							},
+							"linkUrl": null,
+							"votes": [],
+							"text": "Today's special is Monte Carlo sandwich w/ German potato salad and watermelon. Super delicious. This being my first visit, my experience was excellent. I'll definitely come back here to try more. Very friendly and helpful staff. I was greeted immediately after I walked in. I didn't get the look-up-and-then-ill-go-back-to-what-i'm-doing thing that restaurants dish out all too frequently nowadays. Food came out quickly and well presented. This is a small restaurant with limited self-seating inside and out. I had my hands full, so when I was about to take outside seating, the girl carried my lunch outside for me. Wonderful! This spot is a must try.",
+							"title": null
+						}
+					],
+					"rank": null,
+					"votes": [
+						{
+							"count": 1,
+							"type": ""
+						},
+						{
+							"count": 1,
+							"type": ""
+						},
+						{
+							"count": 1,
+							"type": ""
+						}
+					],
+					"reviewsCount": 1,
+					"reviewBusinesses": []
+				},
+				"contactFollowerCount": null,
+				"contactsCount": null,
+				"messages": null,
+				"friendsCount": 0,
+				"likeMsgCount": null,
+				"msgCount": null
+			},
+			"gender": null,
+			"city": "Tucson",
+			"description": null,
+			"pictures": [
+				{
+					"name": null,
+					"value": "http://www.yelp.com//s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/ebc2a2e28267/assets/img/default_avatars/user_large_square.png"
+				}
+			],
+			"result": {
+				"resultStatus": "OK",
+				"resultMsg": ""
+			},
+			"nickname": null,
+			"term": "[\"John S.'s\" Tucson, AZ]",
+			"mergedIdentities": [],
+			"email": "c.l.soukup@comcast.net",
+			"birthDay": null,
+			"address": "9352 E Vallarta Trl",
+			"salary_LowPriority2": null,
+			"salary_LowPriority1": null,
+			"ageTentative": null,
+			"additionalDetails": [
+				{
+					"name": "Stats",
+					"value": "Bookmarks                 27"
+				}
+			],
+			"resultStatus": "OK",
+			"actionGroupName": "2016_09_07_manual_request",
+			"rdi": null,
+			"otherPhones": [],
+			"location": null,
+			"middleName": null,
+			"websites": [],
+			"validationEmail": null,
+			"age": null,
+			"username": "John S."
+		},
+		{
+			"otherEmails": [],
+			"country": null,
+			"dateOfRegistration": null,
+			"keyTopics": [],
+			"educations": [],
+			"zip4": "9672",
+			"source": "SmartyStreets",
+			"salary": null,
+			"branch": null,
+			"validationPhone": null,
+			"cacheId": "e363db9c-7325-4e7f-b571-ecd3891b8e07",
+			"empty": false,
+			"skills": [],
+			"lastUpdated": "2016-09-07T22:33:01Z",
+			"companies": [],
+			"currentJob": null,
+			"historicalContact": null,
+			"familyAdditionalDetails": [],
+			"id": null,
+			"state": "arizona",
+			"lat": "32.29999",
+			"allSentences": null,
+			"zip": "85749",
+			"lng": "-110.79276",
+			"habitations": [],
+			"probability": 1,
+			"ip": [],
+			"query": "MANUAL_REQUEST",
+			"probabilityByLinkedin": 0,
+			"experiences": [],
+			"profileUrlLinkedin": null,
+			"deepdataPerson": null,
+			"firstName": null,
+			"latLngType": null,
+			"nationality": null,
+			"phone": null,
+			"counties": [
+				"Pima"
+			],
+			"profileUrl": "https://api.smartystreets.com/street-address?auth-token=4430762390019225725\u0026candidates=5\u0026source=website\u0026street=9352+E+Vallarta+Trl%2C+Tucson%2C+AZ%2C",
+			"lastName": null,
+			"stateAbbr": "AZ",
+			"regions": [],
+			"activity": null,
+			"gender": null,
+			"city": "Tucson",
+			"description": null,
+			"pictures": [],
+			"result": {
+				"resultStatus": "OK",
+				"resultMsg": ""
+			},
+			"nickname": null,
+			"term": "[9352 E Vallarta Trl, Tucson, AZ,]",
+			"mergedIdentities": [],
+			"email": null,
+			"birthDay": null,
+			"address": "9352 E Vallarta Trl",
+			"salary_LowPriority2": null,
+			"salary_LowPriority1": null,
+			"ageTentative": null,
+			"additionalDetails": [],
+			"resultStatus": "OK",
+			"actionGroupName": "2016_09_07_manual_request",
+			"rdi": "Residential",
+			"otherPhones": [],
+			"location": null,
+			"middleName": null,
+			"websites": [],
+			"validationEmail": null,
+			"age": null,
+			"username": null
+		},
+		{
+			"otherEmails": [],
+			"country": null,
+			"dateOfRegistration": null,
+			"keyTopics": [],
+			"educations": [],
+			"zip4": null,
+			"source": "Zillow",
+			"salary": null,
+			"branch": null,
+			"validationPhone": null,
+			"cacheId": "d7426c4d-680e-4c48-84c4-b8b5c8c5b6e7",
+			"empty": false,
+			"skills": [],
+			"lastUpdated": "2016-09-07T22:33:01Z",
+			"companies": [],
+			"currentJob": null,
+			"historicalContact": null,
+			"familyAdditionalDetails": [],
+			"id": null,
+			"state": "arizona",
+			"lat": null,
+			"allSentences": null,
+			"zip": null,
+			"lng": null,
+			"habitations": [
+				{
+					"features": "{\"targetDiv\":\"gpt-ad-1c0f53b2-d473-4d6f-b6f1-a57b1c009b30\",\"slot\":\"zillow/property_details/not_for_sale/rtt_main_p1\",\"network\":\"7449\",\"sizes\":[115,20],\"targets\":{\"zip\":\"85749\",\"aamgnrc1\":\"9352 E Vallarta Trl\",\"bd\":\"0\",\"z_listing_image_url\":\"\",\"zusr\":\"true\",\"city\":\"Tucson\",\"proptp\":\"sfh\",\"vers\":\"ADS_Tagless:Control,SHO_SINGLE_AD_IN_FEED:CONTROL,SHO_DESKTOP_PHOTO_CARDS:PHOTO_CARDS_EARLY_BREAKPOINT,ADS_BLDR_TXTLNK:BELOW_BLURB_LNK,SHO_DESKTOP_MAP_LIST_RATIO:SHOW_TOGGLE_TOP,SHO_ADS_AND_TRACKING_PIXELS:CONTROL\",\"pid\":\"8464291\",\"price_band\":\"z200\",\"yrblt\":\"1970-1979\",\"zestimate\":\"236218\",\"listtp\":\"not_for_sale\",\"zguidh\":\"-8503530615446369327\",\"premieragent\":\"no\",\"sqftrange\":\"1500-1999\",\"dma\":\"25\",\"sqft\":\"1602\",\"posting_url\":\"\",\"state\":\"AZ\",\"pis\":\"1\",\"cnty\":\"Pima\"},\"defer_ad\":true,\"explicit_defer_ad\":true,\"defer_target_frame\":false,\"load_event\":\"deferred:verizonFiosAd\"}",
+					"data": "-- beds;2 baths;1,602 sqft",
+					"estimate": "Off Market;Estimate: $236,218;Price this home;Rent Estimate: $1,200/mo",
+					"facts": "Single Family;Built in 1975;All time views: 93;Cooling: Evaporative;Heating: Forced air;Last sold: Jan 2002 for $184,900"
+				}
+			],
+			"probability": 1,
+			"ip": [],
+			"query": "MANUAL_REQUEST",
+			"probabilityByLinkedin": 0,
+			"experiences": [],
+			"profileUrlLinkedin": null,
+			"deepdataPerson": null,
+			"firstName": null,
+			"latLngType": null,
+			"nationality": null,
+			"phone": null,
+			"counties": [],
+			"profileUrl": "http://www.zillow.com/homes/9352-E-Vallarta-Trl%2C-Tucson%2C-AZ%2C_rb/",
+			"lastName": null,
+			"stateAbbr": "AZ",
+			"regions": [],
+			"activity": null,
+			"gender": null,
+			"city": "Tucson",
+			"description": null,
+			"pictures": [],
+			"result": {
+				"resultStatus": "OK",
+				"resultMsg": ""
+			},
+			"nickname": null,
+			"term": "[9352 E Vallarta Trl, Tucson, AZ, ]",
+			"mergedIdentities": [],
+			"email": null,
+			"birthDay": null,
+			"address": "9352 E Vallarta Trl",
+			"salary_LowPriority2": null,
+			"salary_LowPriority1": null,
+			"ageTentative": null,
+			"additionalDetails": [],
+			"resultStatus": "OK",
+			"actionGroupName": "2016_09_07_manual_request",
+			"rdi": null,
+			"otherPhones": [],
+			"location": null,
+			"middleName": null,
+			"websites": [],
+			"validationEmail": null,
+			"age": null,
+			"username": null
+		}
+	],
+	"mergedDetails": {
+		"otherEmails": [],
+		"country": null,
+		"dateOfRegistration": null,
+		"keyTopics": [],
+		"educations": [],
+		"zip4": "9672",
+		"source": null,
+		"salary": null,
+		"branch": null,
+		"validationPhone": null,
+		"cacheId": null,
+		"empty": true,
+		"skills": [],
+		"lastUpdated": "2016-09-26T17:01:51Z",
+		"companies": [],
+		"currentJob": null,
+		"historicalContact": null,
+		"familyAdditionalDetails": [
+			{
+				"name": "timezone",
+				"value": "Mountain Time Zone"
+			},
+			{
+				"name": "InferredHouseholdRank",
+				"value": "1"
+			},
+			{
+				"name": "homeownerprobabilitymodel",
+				"value": "Verified Home Owner"
+			},
+			{
+				"name": "persondateofbirthyear",
+				"value": "1958"
+			},
+			{
+				"name": "persondateofbirthmonth",
+				"value": "01"
+			},
+			{
+				"name": "persondateofbirthday",
+				"value": "01"
+			},
+			{
+				"name": "personexactage",
+				"value": "57"
+			},
+			{
+				"name": "estimatedincomecode",
+				"value": "$75,000 - $99,999"
+			},
+			{
+				"name": "Networth",
+				"value": "$250,000 - $499,999"
+			},
+			{
+				"name": "NumberOfLinesOfCredit",
+				"value": "6 Lines of Credit"
+			},
+			{
+				"name": "personeducation",
+				"value": "Completed High School"
+			},
+			{
+				"name": "NumberOfChildren",
+				"value": "0"
+			},
+			{
+				"name": "presenceofchildren",
+				"value": "N"
+			},
+			{
+				"name": "personmaritalstatus",
+				"value": "Married"
+			},
+			{
+				"name": "PersonHomeOwnerOrRental",
+				"value": "O"
+			},
+			{
+				"name": "lengthofresidence",
+				"value": "12"
+			},
+			{
+				"name": "dwellingtype",
+				"value": "Single Family Dwelling Unit"
+			},
+			{
+				"name": "NumberOfAdults",
+				"value": "3"
+			},
+			{
+				"name": "HouseHoldSize",
+				"value": "4"
+			},
+			{
+				"name": "GenerationsInHousehold",
+				"value": "2"
+			},
+			{
+				"name": "CreditCardUser",
+				"value": "Y"
+			},
+			{
+				"name": "charitable",
+				"value": "Y"
+			},
+			{
+				"name": "PoliticalCharitableDonation",
+				"value": "Y"
+			},
+			{
+				"name": "PoliticalLiberalCharitableDonation",
+				"value": "Y"
+			},
+			{
+				"name": "ReligiousCharitableDonation",
+				"value": "Y"
+			},
+			{
+				"name": "HomeandGarden",
+				"value": "Y"
+			},
+			{
+				"name": "sweepstakes",
+				"value": "Y"
+			},
+			{
+				"name": "HomeLiving",
+				"value": "Y"
+			},
+			{
+				"name": "BuyAutoParts",
+				"value": "Y"
+			},
+			{
+				"name": "ethniccode",
+				"value": "U9"
+			},
+			{
+				"name": "ethnicgroup",
+				"value": "E"
+			},
+			{
+				"name": "languagecode",
+				"value": "E1"
+			},
+			{
+				"name": "religioncode",
+				"value": "C"
+			},
+			{
+				"name": "CreditRating",
+				"value": "under 499"
+			},
+			{
+				"name": "DoNotCallList",
+				"value": "Y"
+			},
+			{
+				"name": "PropertyType",
+				"value": "A"
+			},
+			{
+				"name": "AddressID",
+				"value": "106394869"
+			},
+			{
+				"name": "IndividualId",
+				"value": "1"
+			},
+			{
+				"name": "persontitleofrespect",
+				"value": "MR"
+			},
+			{
+				"name": "housenumber",
+				"value": "9352"
+			},
+			{
+				"name": "predirection",
+				"value": "E"
+			},
+			{
+				"name": "streetname",
+				"value": "VALLARTA"
+			},
+			{
+				"name": "streetsuffix",
+				"value": "TRL"
+			},
+			{
+				"name": "Zip_4",
+				"value": "9672"
+			},
+			{
+				"name": "del_point_check_digit",
+				"value": "526"
+			},
+			{
+				"name": "msa",
+				"value": "8520"
+			},
+			{
+				"name": "countycode",
+				"value": "019"
+			},
+			{
+				"name": "countyname",
+				"value": "PIMA"
+			},
+			{
+				"name": "carrier_route",
+				"value": "R025"
+			},
+			{
+				"name": "censustract",
+				"value": "004052"
+			},
+			{
+				"name": "censusblock",
+				"value": "1"
+			},
+			{
+				"name": "latitude",
+				"value": "32.300400"
+			},
+			{
+				"name": "longitude",
+				"value": "-110.793000"
+			},
+			{
+				"name": "Xaxis",
+				"value": "-0.30006049771508025"
+			},
+			{
+				"name": "Yaxis",
+				"value": "-0.79020564280546723"
+			},
+			{
+				"name": "Zaxis",
+				"value": "0.53435825041761698"
+			},
+			{
+				"name": "dpv_code",
+				"value": "Y"
+			},
+			{
+				"name": "NumberOfSources",
+				"value": "10"
+			},
+			{
+				"name": "secondaryaddresspresent",
+				"value": "N"
+			},
+			{
+				"name": "livingunitid",
+				"value": "1185764076"
+			},
+			{
+				"name": "RDID",
+				"value": "184697402"
+			},
+			{
+				"name": "lengthofresidencecode",
+				"value": "13"
+			},
+			{
+				"name": "numberofpersonsinlivingunit",
+				"value": "4"
+			},
+			{
+				"name": "persongender",
+				"value": "Male"
+			},
+			{
+				"name": "personagecode",
+				"value": "8"
+			},
+			{
+				"name": "Males_45_54",
+				"value": "Y"
+			},
+			{
+				"name": "Females_45_54",
+				"value": "Y"
+			},
+			{
+				"name": "Females_55_64",
+				"value": "Y"
+			},
+			{
+				"name": "InferredAge",
+				"value": "57"
+			},
+			{
+				"name": "occupationgroup",
+				"value": "Other"
+			},
+			{
+				"name": "personoccupation",
+				"value": "0000"
+			},
+			{
+				"name": "hispaniccountrycode",
+				"value": "00"
+			},
+			{
+				"name": "PresenceOfCreditCard",
+				"value": "Y"
+			},
+			{
+				"name": "presenceofgoldorplatinumcreditcard",
+				"value": "Y"
+			},
+			{
+				"name": "PresenceOfPremiumCreditCard",
+				"value": "Y"
+			},
+			{
+				"name": "PresenceOfBankCard",
+				"value": "Y"
+			},
+			{
+				"name": "americanexpresscard",
+				"value": "Y"
+			},
+			{
+				"name": "investment",
+				"value": "Y"
+			},
+			{
+				"name": "investmentstocksecurities",
+				"value": "Y"
+			},
+			{
+				"name": "AmericanExpressGoldPremium",
+				"value": "Y"
+			},
+			{
+				"name": "MastercardRegular",
+				"value": "Y"
+			},
+			{
+				"name": "VisaRegular",
+				"value": "Y"
+			},
+			{
+				"name": "CreditCardholderUnknownType",
+				"value": "Y"
+			},
+			{
+				"name": "Investing_Active",
+				"value": "Y"
+			},
+			{
+				"name": "InvestmentsPersonal",
+				"value": "Y"
+			},
+			{
+				"name": "InvestingFinanceGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "valuehunter",
+				"value": "Y"
+			},
+			{
+				"name": "opportunityseekers",
+				"value": "Y"
+			},
+			{
+				"name": "automotivebuff",
+				"value": "Y"
+			},
+			{
+				"name": "bookreader",
+				"value": "Y"
+			},
+			{
+				"name": "computerowner",
+				"value": "Y"
+			},
+			{
+				"name": "cookingenthusiast",
+				"value": "Y"
+			},
+			{
+				"name": "exerciseenthusiast",
+				"value": "Y"
+			},
+			{
+				"name": "Gardener",
+				"value": "Y"
+			},
+			{
+				"name": "golfenthusiasts",
+				"value": "Y"
+			},
+			{
+				"name": "homedecoratingenthusiast",
+				"value": "Y"
+			},
+			{
+				"name": "outdoorenthusiast",
+				"value": "Y"
+			},
+			{
+				"name": "outdoorsportslover",
+				"value": "Y"
+			},
+			{
+				"name": "photography",
+				"value": "Y"
+			},
+			{
+				"name": "traveler",
+				"value": "Y"
+			},
+			{
+				"name": "pets",
+				"value": "Y"
+			},
+			{
+				"name": "cats",
+				"value": "Y"
+			},
+			{
+				"name": "dogs",
+				"value": "Y"
+			},
+			{
+				"name": "mailresponder",
+				"value": "Y"
+			},
+			{
+				"name": "religiousmagazine",
+				"value": "Y"
+			},
+			{
+				"name": "femalemerchbuyer",
+				"value": "Y"
+			},
+			{
+				"name": "crafts_hobbmerchbuyer",
+				"value": "Y"
+			},
+			{
+				"name": "gardening_farmingbuyer",
+				"value": "Y"
+			},
+			{
+				"name": "bookbuyer",
+				"value": "Y"
+			},
+			{
+				"name": "collect_specialfoodsbuyer",
+				"value": "Y"
+			},
+			{
+				"name": "religiouscontributor",
+				"value": "Y"
+			},
+			{
+				"name": "politicalcontributor",
+				"value": "Y"
+			},
+			{
+				"name": "donatestoenvironmentalcauses",
+				"value": "Y"
+			},
+			{
+				"name": "hightechleader",
+				"value": "Y"
+			},
+			{
+				"name": "MailOrderBuyer",
+				"value": "Y"
+			},
+			{
+				"name": "OnlinePurchasingIndicator",
+				"value": "Y"
+			},
+			{
+				"name": "ApparelWomens",
+				"value": "Y"
+			},
+			{
+				"name": "ApparelMens",
+				"value": "Y"
+			},
+			{
+				"name": "HealthAndBeauty",
+				"value": "Y"
+			},
+			{
+				"name": "BeautyCosmetics",
+				"value": "Y"
+			},
+			{
+				"name": "AnimalWelfareCharitableDonation",
+				"value": "Y"
+			},
+			{
+				"name": "ChildrensCharitableDonation",
+				"value": "Y"
+			},
+			{
+				"name": "CommunityCharities",
+				"value": "Y"
+			},
+			{
+				"name": "ChildrensProductsGeneral",
+				"value": "Y"
+			},
+			{
+				"name": "ChildrensInterests",
+				"value": "Y"
+			},
+			{
+				"name": "ChristianFamilies",
+				"value": "Y"
+			},
+			{
+				"name": "OtherPetOwner",
+				"value": "Y"
+			},
+			{
+				"name": "WorkingWoman",
+				"value": "Y"
+			},
+			{
+				"name": "SohoIndicator",
+				"value": "Y"
+			},
+			{
+				"name": "BooksAndMagazinesMagazines",
+				"value": "Y"
+			},
+			{
+				"name": "BooksAndMusicBooks",
+				"value": "Y"
+			},
+			{
+				"name": "ReadingGeneral",
+				"value": "Y"
+			},
+			{
+				"name": "ReadingScienceFiction",
+				"value": "Y"
+			},
+			{
+				"name": "ReadingMagazines",
+				"value": "Y"
+			},
+			{
+				"name": "ReadingGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "CurrentAffairsPolitics",
+				"value": "Y"
+			},
+			{
+				"name": "ReligiousInspirational",
+				"value": "Y"
+			},
+			{
+				"name": "Magazines",
+				"value": "Y"
+			},
+			{
+				"name": "ElectronicsComputingAndHomeOffice",
+				"value": "Y"
+			},
+			{
+				"name": "MusicPlayer",
+				"value": "Y"
+			},
+			{
+				"name": "MusicAvidListener",
+				"value": "Y"
+			},
+			{
+				"name": "MovieCollector",
+				"value": "Y"
+			},
+			{
+				"name": "TVSatelliteDish",
+				"value": "Y"
+			},
+			{
+				"name": "ConsumerElectronics",
+				"value": "Y"
+			},
+			{
+				"name": "MovieMusicGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "ElectronicsComputersGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "TheaterPerformingArts",
+				"value": "Y"
+			},
+			{
+				"name": "Arts",
+				"value": "Y"
+			},
+			{
+				"name": "CollectiblesGeneral",
+				"value": "Y"
+			},
+			{
+				"name": "CollectiblesCoins",
+				"value": "Y"
+			},
+			{
+				"name": "CollectorAvid",
+				"value": "Y"
+			},
+			{
+				"name": "CollectiblesandAntiquesGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "Autowork",
+				"value": "Y"
+			},
+			{
+				"name": "Woodworking",
+				"value": "Y"
+			},
+			{
+				"name": "Crafts",
+				"value": "Y"
+			},
+			{
+				"name": "HomeImprovementGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "HomeFurnishingsDecorating",
+				"value": "Y"
+			},
+			{
+				"name": "HomeImprovement",
+				"value": "Y"
+			},
+			{
+				"name": "FoodWines",
+				"value": "Y"
+			},
+			{
+				"name": "CookingGeneral",
+				"value": "Y"
+			},
+			{
+				"name": "CookingFoodGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "TravelGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "TravelDomestic",
+				"value": "Y"
+			},
+			{
+				"name": "SportyLiving",
+				"value": "Y"
+			},
+			{
+				"name": "UpscaleLiving",
+				"value": "Y"
+			},
+			{
+				"name": "Highbrow",
+				"value": "Y"
+			},
+			{
+				"name": "CommonLiving",
+				"value": "Y"
+			},
+			{
+				"name": "ProfessionalLiving",
+				"value": "Y"
+			},
+			{
+				"name": "BroaderLiving",
+				"value": "Y"
+			},
+			{
+				"name": "ExerciseHealthGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "ExerciseRunningJogging",
+				"value": "Y"
+			},
+			{
+				"name": "ExerciseWalking",
+				"value": "Y"
+			},
+			{
+				"name": "SpectatorSportsAutoMotorcycleRacing",
+				"value": "Y"
+			},
+			{
+				"name": "SpectatorSportsTVSports",
+				"value": "Y"
+			},
+			{
+				"name": "SpectatorSportsFootball",
+				"value": "Y"
+			},
+			{
+				"name": "SpectatorSportsBaseball",
+				"value": "Y"
+			},
+			{
+				"name": "SpectatorSportsBasketball",
+				"value": "Y"
+			},
+			{
+				"name": "Nascar",
+				"value": "Y"
+			},
+			{
+				"name": "SportsandLeisure",
+				"value": "Y"
+			},
+			{
+				"name": "CampingHiking",
+				"value": "Y"
+			},
+			{
+				"name": "SportsGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "OutdoorsGrouping",
+				"value": "Y"
+			},
+			{
+				"name": "HealthMedical",
+				"value": "Y"
+			},
+			{
+				"name": "DietingWeightLoss",
+				"value": "Y"
+			},
+			{
+				"name": "SelfImprovement",
+				"value": "Y"
+			},
+			{
+				"name": "AutomotiveAutoPartsAndAccessories",
+				"value": "Y"
+			},
+			{
+				"name": "RDI",
+				"value": "Y"
+			},
+			{
+				"name": "airconditioning",
+				"value": "AC.EVAPORATIVE"
+			},
+			{
+				"name": "homepurchaseprice",
+				"value": "184"
+			},
+			{
+				"name": "homepurchasepricecode",
+				"value": "4"
+			},
+			{
+				"name": "homepurchasedateyear",
+				"value": "2002"
+			},
+			{
+				"name": "homepurchasedatemonth",
+				"value": "1"
+			},
+			{
+				"name": "homepurchasedateday",
+				"value": "2"
+			},
+			{
+				"name": "homeyearbuilt",
+				"value": "1975"
+			},
+			{
+				"name": "estimatedcurrenthomevaluecode",
+				"value": "J"
+			},
+			{
+				"name": "mortgageamountinthousands",
+				"value": "0"
+			},
+			{
+				"name": "mortgageamountinthousandscode",
+				"value": "0"
+			},
+			{
+				"name": "mortgagelendernameavailable",
+				"value": "N"
+			},
+			{
+				"name": "transactiontype",
+				"value": "R"
+			},
+			{
+				"name": "deeddateofrefinanceyear",
+				"value": "2005"
+			},
+			{
+				"name": "deeddateofrefinancemonth",
+				"value": "7"
+			},
+			{
+				"name": "deeddateofrefinanceday",
+				"value": "23"
+			},
+			{
+				"name": "refinanceamountinthousands",
+				"value": "50"
+			},
+			{
+				"name": "refinanceamountinthousandscode",
+				"value": "1"
+			},
+			{
+				"name": "refinancelendername",
+				"value": "WELLS FARGO BK NA"
+			},
+			{
+				"name": "refinancelendernameavailable",
+				"value": "Y"
+			},
+			{
+				"name": "refinanceratetype",
+				"value": "F"
+			},
+			{
+				"name": "refinanceloantype",
+				"value": "C"
+			},
+			{
+				"name": "CensusMedianHomeValue",
+				"value": "002113"
+			},
+			{
+				"name": "CensusMedianHouseholdIncome",
+				"value": "00771"
+			},
+			{
+				"name": "CRA_IncomeClassificationCode",
+				"value": "HIGH INCOME"
+			},
+			{
+				"name": "MostRecentMortgageAmount2nd",
+				"value": "00160000"
+			},
+			{
+				"name": "Purchase2ndMortgageAmount",
+				"value": "00000000"
+			},
+			{
+				"name": "MostRecentMortgageDate2nd",
+				"value": "20030623"
+			},
+			{
+				"name": "PurchaseMortgageDate",
+				"value": "00000000"
+			},
+			{
+				"name": "MostRecentMortgage2ndLoanTypeCode",
+				"value": "CONVENTIONAL"
+			},
+			{
+				"name": "MostRecentLenderCode",
+				"value": "409"
+			},
+			{
+				"name": "MostRecent2ndLenderCode",
+				"value": "000"
+			},
+			{
+				"name": "PurchaseLenderCode",
+				"value": "000"
+			},
+			{
+				"name": "MostRecentLenderName2nd",
+				"value": "WASHTENAW MTG"
+			},
+			{
+				"name": "MostRecentMortgage2ndInterestRateType",
+				"value": "F"
+			},
+			{
+				"name": "MostRecentMortgageInterestRate",
+				"value": "000000"
+			},
+			{
+				"name": "MostRecentMortgage2ndInterestRate",
+				"value": "000000"
+			},
+			{
+				"name": "Purchase2ndMortgageInterestRate",
+				"value": "000000"
+			},
+			{
+				"name": "Sewer",
+				"value": "0"
+			},
+			{
+				"name": "Water",
+				"value": "0"
+			},
+			{
+				"name": "LoanToValue",
+				"value": "092"
+			},
+			{
+				"name": "PassProspectorValueHomeValueMortgageFile",
+				"value": "00228276"
+			},
+			{
+				"name": "EMAILFLAG",
+				"value": "Y"
+			},
+			{
+				"name": "Name",
+				"value": "JOHN J SOUKUP"
+			},
+			{
+				"name": "ChildrenAge00_02",
+				"value": "U"
+			},
+			{
+				"name": "Unknowngender_18_24",
+				"value": "U"
+			},
+			{
+				"name": "Females_18_24",
+				"value": "U"
+			},
+			{
+				"name": "Males_18_24",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge16_17Unknown",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge16_17Female",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge16_17Male",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge16_17",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge11_15Unknown",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge11_15Female",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge11_15Male",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge11_15",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge06_10Unknown",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge06_10Female",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge06_10Male",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge06_10",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge03_05Unknown",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge03_05Female",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge03_05Male",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge03_05",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge00_02Unknown",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge00_02Female",
+				"value": "U"
+			},
+			{
+				"name": "ChildrenAge00_02Male",
+				"value": "U"
+			},
+			{
+				"name": "EthnicConfidenceCode",
+				"value": "U"
+			},
+			{
+				"name": "businessowner",
+				"value": "U"
+			},
+			{
+				"name": "Unknowngender_75_Plus",
+				"value": "U"
+			},
+			{
+				"name": "Females_75_Plus",
+				"value": "U"
+			},
+			{
+				"name": "Males_75_Plus",
+				"value": "U"
+			},
+			{
+				"name": "Unknowngender_65_74",
+				"value": "U"
+			},
+			{
+				"name": "Females_65_74",
+				"value": "U"
+			},
+			{
+				"name": "Males_65_74",
+				"value": "U"
+			},
+			{
+				"name": "Unknowngender_55_64",
+				"value": "U"
+			},
+			{
+				"name": "Males_55_64",
+				"value": "U"
+			},
+			{
+				"name": "Unknowngender_45_54",
+				"value": "U"
+			},
+			{
+				"name": "Unknowngender_35_44",
+				"value": "U"
+			},
+			{
+				"name": "Females_35_44",
+				"value": "U"
+			},
+			{
+				"name": "Males_35_44",
+				"value": "U"
+			},
+			{
+				"name": "Unknowngender_25_34",
+				"value": "U"
+			},
+			{
+				"name": "Females_25_34",
+				"value": "U"
+			},
+			{
+				"name": "Males_25_34",
+				"value": "U"
+			},
+			{
+				"name": "InvestmentsRealEstate",
+				"value": "U"
+			},
+			{
+				"name": "CreditCardNewIssue",
+				"value": "U"
+			},
+			{
+				"name": "TravelAndEntertainmentCardHolder",
+				"value": "U"
+			},
+			{
+				"name": "VisaGoldPremium",
+				"value": "U"
+			},
+			{
+				"name": "MastercardGoldPremium",
+				"value": "U"
+			},
+			{
+				"name": "GasolineOrRetailCardGoldPremium",
+				"value": "U"
+			},
+			{
+				"name": "DiscoverRegular",
+				"value": "U"
+			},
+			{
+				"name": "DiscoverGoldPremium",
+				"value": "U"
+			},
+			{
+				"name": "Credit_RangeOfNewCredit",
+				"value": "U"
+			},
+			{
+				"name": "GasDeptRetailCardHolder",
+				"value": "U"
+			},
+			{
+				"name": "PresenceOfUpscaleRetailCard",
+				"value": "U"
+			},
+			{
+				"name": "do_it_yourselfers",
+				"value": "U"
+			},
+			{
+				"name": "MembershipClub",
+				"value": "U"
+			},
+			{
+				"name": "newsandfinancial",
+				"value": "U"
+			},
+			{
+				"name": "AssimilationCodes",
+				"value": "U"
+			},
+			{
+				"name": "InvestmentEstimatedResidentialPropertiesOwned",
+				"value": "U"
+			},
+			{
+				"name": "InvestmentsForeign",
+				"value": "U"
+			},
+			{
+				"name": "YoungWomensApparel",
+				"value": "U"
+			},
+			{
+				"name": "ApparelWomensPlusSizes",
+				"value": "U"
+			},
+			{
+				"name": "ApparelWomensPetite",
+				"value": "U"
+			},
+			{
+				"name": "Smoker",
+				"value": "U"
+			},
+			{
+				"name": "veteraninhousehold",
+				"value": "U"
+			},
+			{
+				"name": "donatesbymail",
+				"value": "U"
+			},
+			{
+				"name": "generalcontributor",
+				"value": "U"
+			},
+			{
+				"name": "health_institutioncontributor",
+				"value": "U"
+			},
+			{
+				"name": "malemerchbuyer",
+				"value": "U"
+			},
+			{
+				"name": "YoungAdultInHousehold",
+				"value": "U"
+			},
+			{
+				"name": "ChildrensProductsGeneralBackToSchool",
+				"value": "U"
+			},
+			{
+				"name": "ChildrensProductsGeneralBabyCare",
+				"value": "U"
+			},
+			{
+				"name": "ChildrensLearningAndActivityToys",
+				"value": "U"
+			},
+			{
+				"name": "ChildrensApparelInfantsAndToddlers",
+				"value": "U"
+			},
+			{
+				"name": "SingleParent",
+				"value": "U"
+			},
+			{
+				"name": "Parenting",
+				"value": "U"
+			},
+			{
+				"name": "CharitableDonations_Other",
+				"value": "U"
+			},
+			{
+				"name": "VeteransCharitableDonation",
+				"value": "U"
+			},
+			{
+				"name": "PoliticalConservativeCharitableDonation",
+				"value": "U"
+			},
+			{
+				"name": "InternationalAidCharitableDonation",
+				"value": "U"
+			},
+			{
+				"name": "EnvironmentalIssuesCharitableDonation",
+				"value": "U"
+			},
+			{
+				"name": "ArtsOrCulturalCharitableDonation",
+				"value": "U"
+			},
+			{
+				"name": "Luggage",
+				"value": "U"
+			},
+			{
+				"name": "Jewelry",
+				"value": "U"
+			},
+			{
+				"name": "ApparelChildrens",
+				"value": "U"
+			},
+			{
+				"name": "YoungMensApparel",
+				"value": "U"
+			},
+			{
+				"name": "ApparelMensBigAndTall",
+				"value": "U"
+			},
+			{
+				"name": "ScienceSpace",
+				"value": "U"
+			},
+			{
+				"name": "HistoryMilitary",
+				"value": "U"
+			},
+			{
+				"name": "ReadingAudioBooks",
+				"value": "U"
+			},
+			{
+				"name": "BooksAndMusicBooksAudio",
+				"value": "U"
+			},
+			{
+				"name": "Career",
+				"value": "U"
+			},
+			{
+				"name": "AfricanAmericanProfessionals",
+				"value": "U"
+			},
+			{
+				"name": "CareerImprovement",
+				"value": "U"
+			},
+			{
+				"name": "Equestrian",
+				"value": "U"
+			},
+			{
+				"name": "Grandchildren",
+				"value": "U"
+			},
+			{
+				"name": "SeniorAdultInHousehold",
+				"value": "U"
+			},
+			{
+				"name": "ArtsAndAntiquesArt",
+				"value": "U"
+			},
+			{
+				"name": "ArtsAndAntiquesAntiques",
+				"value": "U"
+			},
+			{
+				"name": "Telecommunications",
+				"value": "U"
+			},
+			{
+				"name": "GamesComputerGames",
+				"value": "U"
+			},
+			{
+				"name": "GamesVideoGames",
+				"value": "U"
+			},
+			{
+				"name": "TVCable",
+				"value": "U"
+			},
+			{
+				"name": "MusicCollector",
+				"value": "U"
+			},
+			{
+				"name": "MusicHomeStereo",
+				"value": "U"
+			},
+			{
+				"name": "IntendToPurchaseHDTVSatelliteDish",
+				"value": "U"
+			},
+			{
+				"name": "HighEndAppliances",
+				"value": "U"
+			},
+			{
+				"name": "ElectronicsandComputingTVVideoMovieWatcher",
+				"value": "U"
+			},
+			{
+				"name": "DVDsVideos",
+				"value": "U"
+			},
+			{
+				"name": "ComputingHomeOfficeGeneral",
+				"value": "U"
+			},
+			{
+				"name": "Gaming",
+				"value": "U"
+			},
+			{
+				"name": "EducationOnline",
+				"value": "U"
+			},
+			{
+				"name": "IntendtoPurchaseHomeImprovement",
+				"value": "U"
+			},
+			{
+				"name": "PhotographyAndVideoEquipment",
+				"value": "U"
+			},
+			{
+				"name": "HousePlants",
+				"value": "U"
+			},
+			{
+				"name": "Aviation",
+				"value": "U"
+			},
+			{
+				"name": "SewingKnittingNeedlework",
+				"value": "U"
+			},
+			{
+				"name": "LifestylesInterestsandPassionsCollectibles",
+				"value": "U"
+			},
+			{
+				"name": "MilitaryMemorabiliaWeaponry",
+				"value": "U"
+			},
+			{
+				"name": "CollectiblesSportsMemorabilia",
+				"value": "U"
+			},
+			{
+				"name": "CollectiblesAntiques",
+				"value": "U"
+			},
+			{
+				"name": "CollectiblesArts",
+				"value": "U"
+			},
+			{
+				"name": "CollectiblesStamps",
+				"value": "U"
+			},
+			{
+				"name": "Musicalinstruments",
+				"value": "U"
+			},
+			{
+				"name": "ExerciseAerobic",
+				"value": "U"
+			},
+			{
+				"name": "CulturalArtisticLiving",
+				"value": "U"
+			},
+			{
+				"name": "DIYLiving",
+				"value": "U"
+			},
+			{
+				"name": "TravelCruiseVacations",
+				"value": "U"
+			},
+			{
+				"name": "TravelInternational",
+				"value": "U"
+			},
+			{
+				"name": "GamingCasino",
+				"value": "U"
+			},
+			{
+				"name": "GamesBoardGamesPuzzles",
+				"value": "U"
+			},
+			{
+				"name": "FoodsNatural",
+				"value": "U"
+			},
+			{
+				"name": "homeswimmingpoolindicator",
+				"value": "U"
+			},
+			{
+				"name": "HuntingShooting",
+				"value": "U"
+			},
+			{
+				"name": "Fishing",
+				"value": "U"
+			},
+			{
+				"name": "Hunting",
+				"value": "U"
+			},
+			{
+				"name": "ScubaDiving",
+				"value": "U"
+			},
+			{
+				"name": "BoatingSailing",
+				"value": "U"
+			},
+			{
+				"name": "Motorcycling",
+				"value": "U"
+			},
+			{
+				"name": "Snowskiing",
+				"value": "U"
+			},
+			{
+				"name": "Tennis",
+				"value": "U"
+			},
+			{
+				"name": "SpectatorSportsSoccer",
+				"value": "U"
+			},
+			{
+				"name": "SpectatorSportsHockey",
+				"value": "U"
+			},
+			{
+				"name": "mortgageloantype",
+				"value": "U"
+			},
+			{
+				"name": "mortgageratetype",
+				"value": "U"
+			},
+			{
+				"name": "homeheatindicator",
+				"value": "U"
+			},
+			{
+				"name": "Purchase2ndMortgageInterestRateType",
+				"value": "U"
+			},
+			{
+				"name": "Purchase2ndMortgageLoanTypeCode",
+				"value": "U"
+			}
+		],
+		"id": null,
+		"state": "arizona",
+		"lat": "32.29999",
+		"allSentences": null,
+		"zip": "85749",
+		"lng": "-110.79276",
+		"habitations": [
+			{
+				"features": "{\"targetDiv\":\"gpt-ad-1c0f53b2-d473-4d6f-b6f1-a57b1c009b30\",\"slot\":\"zillow/property_details/not_for_sale/rtt_main_p1\",\"network\":\"7449\",\"sizes\":[115,20],\"targets\":{\"zip\":\"85749\",\"aamgnrc1\":\"9352 E Vallarta Trl\",\"bd\":\"0\",\"z_listing_image_url\":\"\",\"zusr\":\"true\",\"city\":\"Tucson\",\"proptp\":\"sfh\",\"vers\":\"ADS_Tagless:Control,SHO_SINGLE_AD_IN_FEED:CONTROL,SHO_DESKTOP_PHOTO_CARDS:PHOTO_CARDS_EARLY_BREAKPOINT,ADS_BLDR_TXTLNK:BELOW_BLURB_LNK,SHO_DESKTOP_MAP_LIST_RATIO:SHOW_TOGGLE_TOP,SHO_ADS_AND_TRACKING_PIXELS:CONTROL\",\"pid\":\"8464291\",\"price_band\":\"z200\",\"yrblt\":\"1970-1979\",\"zestimate\":\"236218\",\"listtp\":\"not_for_sale\",\"zguidh\":\"-8503530615446369327\",\"premieragent\":\"no\",\"sqftrange\":\"1500-1999\",\"dma\":\"25\",\"sqft\":\"1602\",\"posting_url\":\"\",\"state\":\"AZ\",\"pis\":\"1\",\"cnty\":\"Pima\"},\"defer_ad\":true,\"explicit_defer_ad\":true,\"defer_target_frame\":false,\"load_event\":\"deferred:verizonFiosAd\"}",
+				"data": "-- beds;2 baths;1,602 sqft",
+				"estimate": "Off Market;Estimate: $236,218;Price this home;Rent Estimate: $1,200/mo",
+				"facts": "Single Family;Built in 1975;All time views: 93;Cooling: Evaporative;Heating: Forced air;Last sold: Jan 2002 for $184,900"
+			}
+		],
+		"probability": 0,
+		"ip": [
+			"71.226.126.234"
+		],
+		"query": null,
+		"probabilityByLinkedin": 0,
+		"experiences": [],
+		"profileUrlLinkedin": null,
+		"deepdataPerson": null,
+		"firstName": "John",
+		"latLngType": null,
+		"nationality": null,
+		"phone": "1-520-247-9050",
+		"counties": [
+			"Pima"
+		],
+		"profileUrl": "||",
+		"lastName": "Soukup",
+		"stateAbbr": "AZ",
+		"regions": [],
+		"activity": null,
+		"gender": null,
+		"city": "Tucson",
+		"description": null,
+		"pictures": [],
+		"result": {
+			"resultStatus": "EMPTY",
+			"resultMsg": ""
+		},
+		"nickname": null,
+		"term": null,
+		"mergedIdentities": [],
+		"email": "c.l.soukup@comcast.net",
+		"birthDay": "1958-10-31T00:00:00Z",
+		"address": "9352 E Vallarta Trl",
+		"salary_LowPriority2": null,
+		"salary_LowPriority1": null,
+		"ageTentative": null,
+		"resultStatus": "EMPTY",
+		"actionGroupName": null,
+		"rdi": "Residential",
+		"advancedBackgroundChecks": [
+			{
+				"name": "Vehicle Model",
+				"value": "FUSION"
+			},
+			{
+				"name": "Vehicle Make",
+				"value": "FORD"
+			},
+			{
+				"name": "Vehicle Year",
+				"value": "2010"
+			}
+		],
+		"otherPhones": [],
+		"location": null,
+		"middleName": null,
+		"websites": [],
+		"validationEmail": null,
+		"age": null,
+		"username": null
+	}
+}
