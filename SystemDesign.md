@@ -75,7 +75,7 @@ System support over 240 million profiles of US citizens.
 ## Other requirements:
     - Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for real-time evaluation).
 
-[System Deployment UML Diagram](http://./Resources/uml/SystemDeployment.uml)
+[System Deployment UML Diagram](Resources/uml/SystemDeployment.uml)
 ![Deployment Diagram](Resources/SystemDeployment.uml.png)
 Basically system architecture will look like that:
 
@@ -92,12 +92,12 @@ Training Box use Google _Tensor Flow_ as AI
 Old and new profiles form `Train Corpus` which is used by _TensorFlow_ to create new `Models`
 
 #### Deployment
-[Training Box Deployment UML Diagram](http://./Resources/uml/TrainigBoxDeployment.uml)
+[Training Box Deployment UML Diagram](Resources/uml/TrainigBoxDeployment.uml)
 ![Training Box](Resources/TrainingBoxDeployment.uml.png)
 
 Operaional Sequence is shown here:
 #### Sequence
-[Training Sequence UML Diagram](http://./Resources/uml/Resources/uml/TrainSequence.uml)
+[Training Sequence UML Diagram](Resources/uml/Resources/uml/TrainSequence.uml)
 ![Training](Resources/TrainSequence.uml.png)
 
 
