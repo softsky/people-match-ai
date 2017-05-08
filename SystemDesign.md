@@ -116,9 +116,9 @@ Evaluation boxes will also be used all the time, they will serve large datasets 
 ### System hardware requirements
 Here are system software requirements 
 - Training box:
-  ~is distributed among 5 high performant 128Gb/10TB 6-12 Nvidia GPU machines~
+  *is distributed among 5 high performant 128Gb/10TB 6-12 Nvidia GPU machines*
 - Evaluation boxes: 
-  ~depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)~
+  *depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)*
     
 ### System Software Requirements
 
