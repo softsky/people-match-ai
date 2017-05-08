@@ -1,0 +1,18 @@
+@startuml
+[Profiles] as Profiles
+[Model] as Model
+
+node {
+ component [TensorFlow] as TF
+ [Controller] as Controller
+}
+
+component [Evaluation Result] as Result
+
+Profiles --> Controller
+Model --> Controller
+Controller --> TF 
+TF --> Controller
+Controller --> Result
+
+@enduml

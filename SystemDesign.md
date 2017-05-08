@@ -81,11 +81,22 @@ Basically system architecture will look like that:
 
 ## Training Box
 
-### Deployment
-[Training Box Deployment UML Diagram](http://./Resources/uml/TrainigBoxDeployment;.uml)
+Training Box performs following operations:
+- New Profiles Crawling
+- Profile Enhancement
+- Model training
+- Model distribution across Evaluation Nodes
+
+Training Box use Google _Tensor Flow_ as AI
+
+Old and new profiles form `Train Corpus` which is used by _TensorFlow_ to create new `Models`
+
+#### Deployment
+[Training Box Deployment UML Diagram](http://./Resources/uml/TrainigBoxDeployment.uml)
 ![Training Box](Resources/TrainingBoxDeployment.uml.png)
 
-### Sequence
+Operaional Sequence is shown here:
+#### Sequence
 [Training Sequence UML Diagram](http://./Resources/uml/Resources/uml/TrainSequence.uml)
 ![Training](Resources/TrainSequence.uml.png)
 
@@ -97,12 +108,18 @@ for next alorithm/model train. We will apparently have several purposes (so mode
 ## Evaluation Box
 Evaluation boxes will also be used all the time, they will serve large datasets searching for appropriate data according to consumer's search.
 
+[Evaluation Box Deployment UML Diagram](Resources/uml/EvaluationBoxDeployment.uml)
+![Evalutaion Box](Resources/EvaluationBoxDeployment.uml.png)
+
 ## System Requirements
+
 ### System hardware requirements
+
     - training box is distributed among 5 high performant 128Gb/10TB 6-12 Nvidia GPU machines
     - evaluation boxes: depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)
     
 ### System Software Requirements
+
     - OS: Amazon/Ubuntu Linux with recent 4.x kernel
     - DB: MongoDB 3.3+
     - AI: Google TenserFlow 1.x
