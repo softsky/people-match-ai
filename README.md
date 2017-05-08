@@ -1,60 +1,139 @@
-# LocalBloxAI Project
-## The next generation of People Matching 
+# Overall System Architecture
+[PeopleMatchAI](https://github.com/softsky/people-match-ai) designed for fast determination of purchase capabilities using person profile.
 
-[LocalBloxAI](https://tensorflow.org) is Google's machine learning and
-data flow-based computation system. It is implemented as C++ runtime, and comes with Python bindings out-of-the-box, including a comprehensive toolbox of
-primitives for use in defining a variety of models, including various kinds of
-neural networks.
-
-This module makes it possible to tap into those capabilities from node.js, with
-a 100% JavaScript (or TypeScript if you prefer) developer experience. It
-provides a natural node.js development experience, while taking care of the
-interop.
-
-Essentially it allows you to define graphs, work with tensors and operations,
-and then execute that graph to run through your data within a session. These
-key concepts define the essence of the programming model.
-
-## A glimpse at what is in the works
-
-This is project is super early, so the current implementation is far from
-complete, and has been cobbled together somewhat quickly to share early ideas,
-and gather community input and participation.
-
-But, anyway, here is what is in the works:
+Persons profile looks like this:
 
 ```javascript
-var tf = require('tensorflow'),
-    fs = require('fs');
+{
+	"_id": {
+		"$oid": "58ea248524dce09f41209710"
+	},
+	"searchResult": [
+		{
+			"otherEmails": [],
+			"country": "United States",
+			"source": "PeopleData",
+			"lastUpdated": "2016-09-26T16:54:28Z",
+			"id": "AVdO_GcbPKMaPmPU7jEY",
+			"state": "arizona",
+			"probability": 1,
+			"query": "MANUAL_REQUEST",
+			"firstName": "John",
+			"phone": "1-520-247-9050",
+			"lastName": "Soukup",
+			"stateAbbr": "AZ",
+			"activity": null,
+			"gender": "M",
+			"city": "Tucson",
+			"result": {
+				"resultStatus": "OK",
+			},
+			"term": "[1]",
+			"mergedIdentities": [
+				{
+					"source": "EX",
+					"datetime": "2016-06-23T00:00:00Z",
+					"lname": "Soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "c.l.soukup@comcast.net",
+					"fname": "John",
+					"address": {
+						"zip": "85749",
+						"city": "Tucson",
+						"streetAddress": "9352 E Vallarta Trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"ip": [
+						"71.226.126.234"
+					],
+					"phone": [
+						"1-520-247-9050"
+					],
+				},
+                    ]}
+]}
+                                
 
-// Define the graph
-var g = new tf.Graph();
-var shape = [2, 2]
-var p1 = g.placeholder(tf.types.float, shape).named('p1');
-var p2 = g.placeholder(tf.types.float, shape).named('p2');
-var value = g.matmul(p1, p2).named('value');
+```
 
-// Optionally save it out (with corresponding APIs to load, instead
-// of re-building the graph, for example when using the resulting model).
-fs.writeFileSync('/tmp/hello.graph', g.save());
+### Comments on Person Profile
+- mergedDetails section contains the array of profile data collected from different places
+- it may contain duplicated
+- it may contain empty records
 
-// Execute the graph
-var session = new tf.Session(g);
+System support over 240 million profiles of US citizens.
 
-var data = {};
-data[p1] = new tf.Tensor([[1.0, 0.0],[0.0, 1.0]]);
-data[p2] = new tf.Tensor([[3.0, 3.0],[3.0, 3.0]]);
+## Requirements
+    - Scalability:
+      System architecture should be scalable and high performant (in terms of traininig and evaluation).
+    - High Performance: 
+      Since there will be multiple concurrent searches, and every search will take valuable amount of time, previous results should be cached.
+      Cache will be wiped every time main database of people profiles is updated
+      We should monitor for most frequent searches and cache results only for them, while searches performed one or few times won't be cached to save memory and drive space
+    
+## Other requirements:
+    - Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for real-time evaluation).
 
-var results = session.run([ value ], data);
-console.log(results[value]);
-```javascript
+[System Deployment UML Diagram](Resources/uml/SystemDeployment.uml)
+![Deployment Diagram](Resources/SystemDeployment.uml.png)
+Basically system architecture will look like that:
+
+## Training Box
+
+Training Box performs following operations:
+- New Profiles Crawling
+- Itentity Match and Profile Merging
+- Profile Enhancement
+- Model training
+- Model distribution across Evaluation Nodes
+
+Training Box use Google _Tensor Flow_ as AI
+
+Old and new profiles form `Train Corpus` which is used by _TensorFlow_ to create new `Models`
+
+#### Deployment
+[Training Box Deployment UML Diagram](Resources/uml/TrainigBoxDeployment.uml)
+![Training Box](Resources/TrainingBoxDeployment.uml.png)
+
+Operaional Sequence is shown here:
+#### Sequence
+[Training Sequence UML Diagram](Resources/uml/Resources/uml/TrainSequence.uml)
+![Training](Resources/TrainSequence.uml.png)
+
+#### Identity Match
+Crawling is performed over multiple resources. We need the way to properly match identities and merge their profiles.
+We might use email or phone as unique intentifier, since name won't always work.
+Since some resources might not return unique identifier we use AI comparing fiels.
+
+[Identity Match Sequence](Resources/uml/IdentityMatchSequece.uml)
+![Identity Match Sequence Diagram](Resources/IdentityMatchSequence.uml.png)
 
 
-As it starts to come together it will be available on
-[npmjs](https://www.npmjs.org/package/tensorflow) as any other module.
 
-## More for later, and helping ...
+Training box will be used most of the time to train all special purposes models using probably slightly modified Inception v3 alorigthm. 
+Traning it from scratch is time consuming operation, however once all special purpose algos and models are trained it could be put down to save hosting cost and be running only once it's needed next time 
+for next alorithm/model train. We will apparently have several purposes (so models and algos) depending on type of information consumers need to receive as the result of their searches.
 
-Stay tuned for more. If you're interested in helping out, by all means, 
-please connect here. I'll share a bit more detail about the roadmap, as well
-as issues for big questions, design issues and areas of exploration.
+## Evaluation Box
+Evaluation boxes will also be used all the time, they will serve large datasets searching for appropriate data according to consumer's search.
+
+[Evaluation Box Deployment UML Diagram](Resources/uml/EvaluationBoxDeployment.uml)
+![Evalutaion Box](Resources/EvaluationBoxDeployment.uml.png)
+
+## System Requirements
+
+### System hardware requirements
+Here are system software requirements 
+- Training box:
+  *is distributed among 5 high performant 128Gb/10TB 6-12 Nvidia GPU machines*
+- Evaluation boxes: 
+  *depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)*
+    
+### System Software Requirements
+
+Here are system software requirements 
+- OS: Amazon/Ubuntu Linux with recent 4.x kernel
+- DB: MongoDB 3.3+
+- AI: Google TenserFlow 1.x
+- JVM: v1.8 or higher
