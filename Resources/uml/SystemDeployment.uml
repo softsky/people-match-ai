@@ -1,0 +1,39 @@
+@startuml
+
+package "Training" {
+node "Training Box" as TB {
+  [Model To Train]
+  [Special Purpose Algorithm]
+  [GPU Rack]
+} 
+}
+
+cloud "Evaluation" {
+node "Evaluation Box #1" as EB1{
+  [Model] as EB1_M
+  [Special Purpose Algorithm] as EB1_SPA
+  [GPU Rack] as EB1_GPU
+} 
+node "Evaluation Box #2" as EB2{
+  [Model] as EB2_M
+  [Special Purpose Algorithm] as EB2_SPA
+  [GPU Rack] as EB2_GPU
+} 
+node "Evaluation Box #3" as EB3{
+  [Model] as EB3_M
+  [Special Purpose Algorithm] as EB3_SPA
+  [GPU Rack] as EB3_GPU
+} 
+node "Evaluation Box #N" as EBN {
+  [Model] as EB4_M
+  [Special Purpose Algorithm] as EB4_SPA
+  [GPU Rack] as EB4_GPU
+} 
+
+}
+
+TB --> EB1
+TB --> EB2
+TB --> EB3
+TB --> EBN 
+@enduml

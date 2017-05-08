@@ -1,0 +1,10 @@
+@startuml
+Controller --> Crawler: Crawl Profiles
+Controller <-- Crawler: crawled Profiles
+Controller --> Enhancer: Enhance Profile
+Controller <-- Enhancer: enhanced Profiles
+Controller --> DB: Update database with enhanced Profiles
+
+Controller --> Train: Re-train DB with new profile corpus
+Controller --> Network: Distribute updated Model through Evalutaion nodes
+@enduml

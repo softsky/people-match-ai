@@ -1,0 +1,11 @@
+@startuml
+component [Train Corpus] as Corpus
+
+node {
+ component [TensorFlow] as TF
+ component [Model To Train] as Model
+}
+
+Corpus --> TF
+TF --> Model
+@enduml
