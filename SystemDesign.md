@@ -75,18 +75,18 @@ System support over 240 million profiles of US citizens.
 ## Other requirements:
     - Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for real-time evaluation).
 
-[System Deployment UML Diagram])(Resources/unl/SystemDeployment.uml)
+[System Deployment UML Diagram])(file://./Resources/uml/SystemDeployment.uml)
 ![Deployment Diagram](Resources/SystemDeployment.uml.png)
 Basically system architecture will look like that:
 
 ## Training Box
 
 ### Deployment
-[Training Box Deployment UML Diagram])(Resources/uml/TrainigBoxDeployment;.uml)
+[Training Box Deployment UML Diagram])(file://./Resources/uml/TrainigBoxDeployment;.uml)
 ![Training Box](Resources/TrainingBoxDeployment.uml.png)
 
 ### Sequence
-[Training Sequence UML Diagram])(Resources/uml/TrainSequence.uml)
+[Training Sequence UML Diagram])(file://./Resources/uml/TrainSequence.uml)
 ![Training](Resources/TrainSequence.uml.png)
 
 
