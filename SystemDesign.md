@@ -107,7 +107,7 @@ We might use email or phone as unique intentifier, since name won't always work.
 Since some resources might not return unique identifier we use AI comparing fiels.
 
 [Identity Match Sequence](Resources/uml/IdentityMatchSequece.uml)
-![Identity Match Sequence Diagram](Resources/IdentityMatchSequece.uml.png)
+![Identity Match Sequence Diagram](Resources/IdentityMatchSequence.uml.png)
 
 
 
