@@ -9,39 +9,9 @@
     
 ## Other requirements:
     - Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for real-time evaluation).
-    
+![Deployment Diagram](Resources/deployment.png)
 Basically system architecture will look like that:
 
-                                                            +----------------------+     +----------------------+      +----------------------+
-      +------------------------------+                      | Evalutation box      |     | Evalutation box      |      | Evalutation box      |
-      |  Training box                |                      +----+----+----+-------+     +----+----+----+-------+      +----+----+----+-------+
-      +------------------------------o                      |GPU |GPU |GPU |GPU    |     |GPU |GPU |GPU |GPU    |      |GPU |GPU |GPU |GPU    |
-      | +--------------------------+ |                      +----+----+----+-------+     +----+----+----+-------+      +----+----+----+-------+
-      | |                          | |                              ^                              ^                             ^
-      | | Model to train           | |                              |                              |                             |
-      | |                          | |                              |                              |                             |
-      | +--------------------------+ |                              |                              |                             |
-      |                              |                              |                              |                             |
-      |                              |                              |                              |                             |
-      | +--------------------------+ |                              |                              |                             |
-      | | Special purpose algorithm| |                    +---------+------------------------------+-----------------------------+
-      | +--------------------------+ |                    |
-      | |                          | |                    |             Result of training is distributed to  special purpose
-      | +------+----+-----+-----+  | |                    |           evaluation boxes in some containers that already include algorithm
-      | | GPU  |GPU | GPU | GPU |  | |                    |
-      | +------+----+-----+-----+  | |                    |
-      | |                          | |                    |
-      | +--------------------+-----+ |                    |
-      |                      |       |                    |
-      |                      |       |                    |
-      |                      |       | +------------------o-+
-      |                      +-------+>|Result of training  |
-      |                              | +--------------------+
-      |                              | |Special purpose algo|
-      |                              | +--------------------+
-      |                              |
-      |                              |
-      +------------------------------+
 
 Training box will be used most of the time to train all special purposes models using probably slightly modified alorigthm. According to suggestions NN guy gave me, we might use Inception v3 network. 
 Traning it from scratch is time consuming operation, however once all special purpose algos and models are trained it could be put down to save hosting cost and be running only once it's needed next time 
