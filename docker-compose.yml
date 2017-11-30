@@ -1,0 +1,67 @@
+version: '3.2'
+services:
+    hadoop:
+     image: sequenceiq/hadoop-docker # HDFS - filesystem for BigData
+     expose:
+      - "50010"
+      - "50020"
+      - "50070"
+      - "50075"
+      - "50090"
+      - "19888"
+      - "8030"
+      - "8031"
+      - "8032"
+      - "8033"
+      - "8040"
+      - "8042"
+      - "8088"
+      - "49707"
+      - "2122"
+    cassandra:
+     image: cassandra:3.0.7
+     links:
+      - hadoop
+     expose:
+      - "7199"
+      - "7000"
+      - "9160"
+      - "9042"
+      - "22"
+      - "8012"
+      - "61621"
+    master:
+      image: singularities/spark
+      command: start-spark master
+      hostname: master
+      ports:
+        - "6066:6066"
+        - "7070:7070"
+        - "7077:7077"
+        - "8080:8080"
+        - "50070:50070"
+    worker:
+      image: singularities/spark
+      command: start-spark worker master
+      environment:
+        SPARK_WORKER_CORES: 2
+        SPARK_WORKER_MEMORY: 2g
+      links:
+        - master
+        - cassandra
+      expose:
+        - "8088"
+        - "8042"
+    # eclipse:
+    #  image: psharkey/eclipse
+    #  links:
+    #   - hadoop
+    #   - master
+    #   - cassandra
+    #  volumes:
+    #   - /tmp/.X11-unix:/tmp/.X11-unix
+    #   - ${HOME}/.m2:/root/.m2
+    #   - ${HOME}/dev:/root/workspace
+    #  environment:
+    #   - DISPLAY=:0.0
+        
