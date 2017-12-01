@@ -1,27 +1,27 @@
 version: '3.2'
 services:
-    hadoop:
-     image: sequenceiq/hadoop-docker # HDFS - filesystem for BigData
-     expose:
-      - "50010"
-      - "50020"
-      - "50070"
-      - "50075"
-      - "50090"
-      - "19888"
-      - "8030"
-      - "8031"
-      - "8032"
-      - "8033"
-      - "8040"
-      - "8042"
-      - "8088"
-      - "49707"
-      - "2122"
-    cassandra:
+    # hadoop:
+    #  image: sequenceiq/hadoop-docker # HDFS - filesystem for BigData
+    #  expose:
+    #   - "50010"
+    #   - "50020"
+    #   - "50070"
+    #   - "50075"
+    #   - "50090"
+    #   - "19888"
+    #   - "8030"
+    #   - "8031"
+    #   - "8032"
+    #   - "8033"
+    #   - "8040"
+    #   - "8042"
+    #   - "8088"
+    #   - "49707"
+    #   - "2122"
+    cassandra: # Database desgined for BigData
      image: cassandra:3.0.7
-     links:
-      - hadoop
+#     links:
+#      - hadoop
      expose:
       - "7199"
       - "7000"
@@ -30,7 +30,7 @@ services:
       - "22"
       - "8012"
       - "61621"
-    master:
+    master: # Master Spark node
       image: singularities/spark
       command: start-spark master
       hostname: master
@@ -40,7 +40,7 @@ services:
         - "7077:7077"
         - "8080:8080"
         - "50070:50070"
-    worker:
+    worker: # Worker Spark node (should be scaled)
       image: singularities/spark
       command: start-spark worker master
       environment:
