@@ -1,2 +1,15 @@
 target
 src/main/resources/model
+/src/main/resources/ai/.ipynb_checkpoints/PeopleMatchAI-identity-match-checkpoint.ipynb
+/src/main/resources/ai/PeopleMatchAI-identity-match.ipynb
+/src/main/resources/ai/PeopleMatchAI-look-alike.ipynb
+/src/main/resources/ai/ai_model.html
+/src/main/resources/ai/.ipynb_checkpoints/PeopleMatchAI-look-alike-checkpoint.ipynb
+/src/main/resources/ai/ai_model_files/MathJax.js
+/src/main/resources/ai/data.txt
+/src/main/resources/ai/test_data_identity_match.csv
+/src/main/resources/ai/test_data_look_alike.csv
+/src/main/resources/ai/train_data_identity_match.csv
+/src/main/resources/ai/train_data_identity_match0.csv
+/src/main/resources/ai/train_data_look_alike.csv
+/src/main/resources/ai/ai_model_files/custom.css
