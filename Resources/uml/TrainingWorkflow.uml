@@ -1,0 +1,5 @@
+@startuml
+   [Training corpus] as Corpus
+   []
+@enduml
+
