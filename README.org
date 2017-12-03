@@ -3,7 +3,7 @@
 
 Persons profile looks like this:
 
-``` javascript
+#+begin_src javascript
 {
 	"_id": {
 		"$oid": "58ea248524dce09f41209710"
@@ -53,9 +53,7 @@ Persons profile looks like this:
 				},
     ]}
 ]}
-                                
-
-```
+#+end_src
 
 
   
@@ -202,35 +200,32 @@ TF --> Controller
 Controller --> Result
 #+end_src
 
+
 ** System Requirements
 
 *** System hardware requirements
-Here are system software requirements 
+ Here are system software requirements 
 
-- Training box:
-  *is distributed among 5 high performant 128Gb/10TB 6*12 Nvidia GPU machines*
+ - Training box:
+   *is distributed among 5 high performant 128Gb/10TB 6*12 Nvidia GPU machines*
       
-- Evaluation boxes: 
-  *depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)*
+ - Evaluation boxes: 
+   *depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)*
     
 *** System Software Requirements
-Here are system software requirements 
+ Here are system software requirements 
 
-- OS: Amazon/Ubuntu Linux with recent 4.x kernel
-- DB: MongoDB 3.3+
-- AI: Google TenserFlow 1.x
-- JVM: v1.8 or higher
+ - OS: Amazon/Ubuntu Linux with recent 4.x kernel
+ - DB: MongoDB 3.3+
+ - AI: Google TenserFlow 1.x
+ - JVM: v1.8 or higher
 
     
 *** How to run
-From the project directory
+ From the project directory
 
-``` shell
-docker-compose up
-docker exec -ti peoplematchai_master_1 bash
-spb run
-```
-
-
-
-
+ #+begin_src shell
+ docker-compose up
+ docker exec -ti peoplematchai_master_1 bash
+ spb run
+ #+end_src

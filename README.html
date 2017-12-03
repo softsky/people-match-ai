@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-12-03 Sun 11:35 -->
+<!-- 2017-12-03 Sun 18:22 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -232,24 +232,24 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org754ae53">1. Overall System Architecture</a>
+<li><a href="#orgcfad777">1. Overall System Architecture</a>
 <ul>
-<li><a href="#org8c27b06">1.1. Comments on Person Profile</a></li>
-<li><a href="#org71eecdd">1.2. Requirements</a></li>
-<li><a href="#orgf007130">1.3. Other requirements:</a></li>
-<li><a href="#org808226d">1.4. Training Box</a>
+<li><a href="#org37f0e30">1.1. Comments on Person Profile</a></li>
+<li><a href="#org222d1b0">1.2. Requirements</a></li>
+<li><a href="#org616aef4">1.3. Other requirements:</a></li>
+<li><a href="#org01e4532">1.4. Training Box</a>
 <ul>
-<li><a href="#org7440daf">1.4.1. Deployment</a></li>
-<li><a href="#org0f86ce5">1.4.2. Sequence</a></li>
-<li><a href="#orgd84c03c">1.4.3. Identity Match</a></li>
+<li><a href="#org691d123">1.4.1. Deployment</a></li>
+<li><a href="#orgfe5f2a5">1.4.2. Sequence</a></li>
+<li><a href="#orgae0a6fc">1.4.3. Identity Match</a></li>
 </ul>
 </li>
-<li><a href="#orgf0758ab">1.5. Evaluation Box</a></li>
-<li><a href="#org08f344d">1.6. System Requirements</a>
+<li><a href="#org843c68d">1.5. Evaluation Box</a></li>
+<li><a href="#orgaad812b">1.6. System Requirements</a>
 <ul>
-<li><a href="#orgcf607d1">1.6.1. System hardware requirements</a></li>
-<li><a href="#org6f95f97">1.6.2. System Software Requirements</a></li>
-<li><a href="#org81d8d81">1.6.3. How to run</a></li>
+<li><a href="#org164b608">1.6.1. System hardware requirements</a></li>
+<li><a href="#org3d0e93e">1.6.2. System Software Requirements</a></li>
+<li><a href="#org12f07b3">1.6.3. How to run</a></li>
 </ul>
 </li>
 </ul>
@@ -257,8 +257,8 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org754ae53" class="outline-2">
-<h2 id="org754ae53"><span class="section-number-2">1</span> Overall System Architecture</h2>
+<div id="outline-container-orgcfad777" class="outline-2">
+<h2 id="orgcfad777"><span class="section-number-2">1</span> Overall System Architecture</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 [PeopleMatchAI](<a href="https://github.com/softsky/people-match-ai">https://github.com/softsky/people-match-ai</a>) designed for fast determination of purchase capabilities using person profile.
@@ -268,69 +268,66 @@ for the JavaScript code in this tag.
 Persons profile looks like this:
 </p>
 
-<p>
-``` javascript
-{
-	"<sub>id</sub>": {
-		"$oid": "58ea248524dce09f41209710"
-	},
-	"searchResult": [
-		{
-			"otherEmails": [],
-			"country": "United States",
-			"source": "PeopleData",
-			"lastUpdated": "2016-09-26T16:54:28Z",
-			"id": "AVdO<sub>GcbPKMaPmPU7jEY</sub>",
-			"state": "arizona",
-			"probability": 1,
-			"query": "MANUAL<sub>REQUEST</sub>",
-			"firstName": "John",
-			"phone": "1-520-247-9050",
-			"lastName": "Soukup",
-			"stateAbbr": "AZ",
-			"activity": null,
-			"gender": "M",
-			"city": "Tucson",
-			"result": {
-				"resultStatus": "OK",
-			},
-			"term": "[1]",
-			"mergedIdentities": [
-				{
-					"source": "EX",
-					"datetime": "2016-06-23T00:00:00Z",
-					"lname": "Soukup",
-					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
-					"email": "c.l.soukup@comcast.net",
-					"fname": "John",
-					"address": {
-						"zip": "85749",
-						"city": "Tucson",
-						"streetAddress": "9352 E Vallarta Trl",
-						"state": "AZ",
-						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
-					},
-					"ip": [
-						"71.226.126.234"
-					],
-					"phone": [
-						"1-520-247-9050"
-					],
-				},
+<div class="org-src-container">
+<pre class="src src-javascript">{
+        <span style="color: #ffa07a;">"_id"</span>: {
+                <span style="color: #ffa07a;">"$oid"</span>: <span style="color: #ffa07a;">"58ea248524dce09f41209710"</span>
+        },
+        <span style="color: #ffa07a;">"searchResult"</span>: [
+                {
+                        <span style="color: #ffa07a;">"otherEmails"</span>: [],
+                        <span style="color: #ffa07a;">"country"</span>: <span style="color: #ffa07a;">"United States"</span>,
+                        <span style="color: #ffa07a;">"source"</span>: <span style="color: #ffa07a;">"PeopleData"</span>,
+                        <span style="color: #ffa07a;">"lastUpdated"</span>: <span style="color: #ffa07a;">"2016-09-26T16:54:28Z"</span>,
+                        <span style="color: #ffa07a;">"id"</span>: <span style="color: #ffa07a;">"AVdO_GcbPKMaPmPU7jEY"</span>,
+                        <span style="color: #ffa07a;">"state"</span>: <span style="color: #ffa07a;">"arizona"</span>,
+                        <span style="color: #ffa07a;">"probability"</span>: 1,
+                        <span style="color: #ffa07a;">"query"</span>: <span style="color: #ffa07a;">"MANUAL_REQUEST"</span>,
+                        <span style="color: #ffa07a;">"firstName"</span>: <span style="color: #ffa07a;">"John"</span>,
+                        <span style="color: #ffa07a;">"phone"</span>: <span style="color: #ffa07a;">"1-520-247-9050"</span>,
+                        <span style="color: #ffa07a;">"lastName"</span>: <span style="color: #ffa07a;">"Soukup"</span>,
+                        <span style="color: #ffa07a;">"stateAbbr"</span>: <span style="color: #ffa07a;">"AZ"</span>,
+                        <span style="color: #ffa07a;">"activity"</span>: <span style="color: #7fffd4;">null</span>,
+                        <span style="color: #ffa07a;">"gender"</span>: <span style="color: #ffa07a;">"M"</span>,
+                        <span style="color: #ffa07a;">"city"</span>: <span style="color: #ffa07a;">"Tucson"</span>,
+                        <span style="color: #ffa07a;">"result"</span>: {
+                                <span style="color: #ffa07a;">"resultStatus"</span>: <span style="color: #ffa07a;">"OK"</span>,
+                        },
+                        <span style="color: #ffa07a;">"term"</span>: <span style="color: #ffa07a;">"[1]"</span>,
+                        <span style="color: #ffa07a;">"mergedIdentities"</span>: [
+                                {
+                                        <span style="color: #ffa07a;">"source"</span>: <span style="color: #ffa07a;">"EX"</span>,
+                                        <span style="color: #ffa07a;">"datetime"</span>: <span style="color: #ffa07a;">"2016-06-23T00:00:00Z"</span>,
+                                        <span style="color: #ffa07a;">"lname"</span>: <span style="color: #ffa07a;">"Soukup"</span>,
+                                        <span style="color: #ffa07a;">"class"</span>: <span style="color: #ffa07a;">"com.selerityfinancial.person.peopledata.dto.PeopleDataPerson"</span>,
+                                        <span style="color: #ffa07a;">"email"</span>: <span style="color: #ffa07a;">"c.l.soukup@comcast.net"</span>,
+                                        <span style="color: #ffa07a;">"fname"</span>: <span style="color: #ffa07a;">"John"</span>,
+                                        <span style="color: #ffa07a;">"address"</span>: {
+                                                <span style="color: #ffa07a;">"zip"</span>: <span style="color: #ffa07a;">"85749"</span>,
+                                                <span style="color: #ffa07a;">"city"</span>: <span style="color: #ffa07a;">"Tucson"</span>,
+                                                <span style="color: #ffa07a;">"streetAddress"</span>: <span style="color: #ffa07a;">"9352 E Vallarta Trl"</span>,
+                                                <span style="color: #ffa07a;">"state"</span>: <span style="color: #ffa07a;">"AZ"</span>,
+                                                <span style="color: #ffa07a;">"class"</span>: <span style="color: #ffa07a;">"com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"</span>
+                                        },
+                                        <span style="color: #ffa07a;">"ip"</span>: [
+                                                <span style="color: #ffa07a;">"71.226.126.234"</span>
+                                        ],
+                                        <span style="color: #ffa07a;">"phone"</span>: [
+                                                <span style="color: #ffa07a;">"1-520-247-9050"</span>
+                                        ],
+                                },
     ]}
 ]}
-</p>
 
 
-<p>
-```
-</p>
+</pre>
+</div>
 </div>
 
 
 
-<div id="outline-container-org8c27b06" class="outline-3">
-<h3 id="org8c27b06"><span class="section-number-3">1.1</span> Comments on Person Profile</h3>
+<div id="outline-container-org37f0e30" class="outline-3">
+<h3 id="org37f0e30"><span class="section-number-3">1.1</span> Comments on Person Profile</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>mergedDetails section contains the array of profile data collected from different places</li>
@@ -344,8 +341,8 @@ System support over 240 million profiles of US citizens.
 </div>
 </div>
 
-<div id="outline-container-org71eecdd" class="outline-3">
-<h3 id="org71eecdd"><span class="section-number-3">1.2</span> Requirements</h3>
+<div id="outline-container-org222d1b0" class="outline-3">
+<h3 id="org222d1b0"><span class="section-number-3">1.2</span> Requirements</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>Scalability:
@@ -358,17 +355,18 @@ We should monitor for most frequent searches and cache results only for them, wh
 </div>
 </div>
 
-<div id="outline-container-orgf007130" class="outline-3">
-<h3 id="orgf007130"><span class="section-number-3">1.3</span> Other requirements:</h3>
+<div id="outline-container-org616aef4" class="outline-3">
+<h3 id="org616aef4"><span class="section-number-3">1.3</span> Other requirements:</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for realtime evaluation).</li>
 </ul>
 
-<p>
-<img src="./Resources/SystemDeployment.png" alt="SystemDeployment.png" />
-file: ./Resources/SystemDeployment.png
+
+<div class="figure">
+<p><img src="./Resources/SystemDeployment.png" alt="SystemDeployment.png" />
 </p>
+</div>
 
 <p>
 Basically system architecture will look like that:
@@ -376,8 +374,8 @@ Basically system architecture will look like that:
 </div>
 </div>
 
-<div id="outline-container-org808226d" class="outline-3">
-<h3 id="org808226d"><span class="section-number-3">1.4</span> Training Box</h3>
+<div id="outline-container-org01e4532" class="outline-3">
+<h3 id="org01e4532"><span class="section-number-3">1.4</span> Training Box</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 Training Box performs following operations:
@@ -400,8 +398,8 @@ Old and new profiles form `Train Corpus` which is used by <span class="underline
 </p>
 </div>
 
-<div id="outline-container-org7440daf" class="outline-4">
-<h4 id="org7440daf"><span class="section-number-4">1.4.1</span> Deployment</h4>
+<div id="outline-container-org691d123" class="outline-4">
+<h4 id="org691d123"><span class="section-number-4">1.4.1</span> Deployment</h4>
 <div class="outline-text-4" id="text-1-4-1">
 
 <div class="figure">
@@ -414,8 +412,8 @@ Operaional Sequence is shown here:
 </p>
 </div>
 </div>
-<div id="outline-container-org0f86ce5" class="outline-4">
-<h4 id="org0f86ce5"><span class="section-number-4">1.4.2</span> Sequence</h4>
+<div id="outline-container-orgfe5f2a5" class="outline-4">
+<h4 id="orgfe5f2a5"><span class="section-number-4">1.4.2</span> Sequence</h4>
 <div class="outline-text-4" id="text-1-4-2">
 
 <div class="figure">
@@ -425,8 +423,8 @@ Operaional Sequence is shown here:
 </div>
 </div>
 
-<div id="outline-container-orgd84c03c" class="outline-4">
-<h4 id="orgd84c03c"><span class="section-number-4">1.4.3</span> Identity Match</h4>
+<div id="outline-container-orgae0a6fc" class="outline-4">
+<h4 id="orgae0a6fc"><span class="section-number-4">1.4.3</span> Identity Match</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
 Crawling is performed over multiple resources. We need the way to properly match identities and merge their profiles.
@@ -449,8 +447,8 @@ for next alorithm/model train. We will apparently have several purposes (so mode
 </div>
 </div>
 
-<div id="outline-container-orgf0758ab" class="outline-3">
-<h3 id="orgf0758ab"><span class="section-number-3">1.5</span> Evaluation Box</h3>
+<div id="outline-container-org843c68d" class="outline-3">
+<h3 id="org843c68d"><span class="section-number-3">1.5</span> Evaluation Box</h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 Evaluation boxes will also be used all the time, they will serve large datasets searching for appropriate data according to consumer's search.
@@ -464,12 +462,13 @@ Evaluation boxes will also be used all the time, they will serve large datasets 
 </div>
 </div>
 
-<div id="outline-container-org08f344d" class="outline-3">
-<h3 id="org08f344d"><span class="section-number-3">1.6</span> System Requirements</h3>
+
+<div id="outline-container-orgaad812b" class="outline-3">
+<h3 id="orgaad812b"><span class="section-number-3">1.6</span> System Requirements</h3>
 <div class="outline-text-3" id="text-1-6">
 </div>
-<div id="outline-container-orgcf607d1" class="outline-4">
-<h4 id="orgcf607d1"><span class="section-number-4">1.6.1</span> System hardware requirements</h4>
+<div id="outline-container-org164b608" class="outline-4">
+<h4 id="org164b608"><span class="section-number-4">1.6.1</span> System hardware requirements</h4>
 <div class="outline-text-4" id="text-1-6-1">
 <p>
 Here are system software requirements 
@@ -485,8 +484,8 @@ Here are system software requirements
 </div>
 </div>
 
-<div id="outline-container-org6f95f97" class="outline-4">
-<h4 id="org6f95f97"><span class="section-number-4">1.6.2</span> System Software Requirements</h4>
+<div id="outline-container-org3d0e93e" class="outline-4">
+<h4 id="org3d0e93e"><span class="section-number-4">1.6.2</span> System Software Requirements</h4>
 <div class="outline-text-4" id="text-1-6-2">
 <p>
 Here are system software requirements 
@@ -502,27 +501,26 @@ Here are system software requirements
 </div>
 
 
-<div id="outline-container-org81d8d81" class="outline-4">
-<h4 id="org81d8d81"><span class="section-number-4">1.6.3</span> How to run</h4>
+<div id="outline-container-org12f07b3" class="outline-4">
+<h4 id="org12f07b3"><span class="section-number-4">1.6.3</span> How to run</h4>
 <div class="outline-text-4" id="text-1-6-3">
 <p>
 From the project directory
 </p>
 
-<p>
-``` shell
-docker-compose up
-docker exec -ti peoplematchai<sub>master</sub><sub>1</sub> bash
+<div class="org-src-container">
+<pre class="src src-shell">docker-compose up
+docker exec -ti peoplematchai_master_1 bash
 spb run
-```
-</p>
+</pre>
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2017-12-03 Sun 11:35</p>
+<p class="date">Created: 2017-12-03 Sun 18:22</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
