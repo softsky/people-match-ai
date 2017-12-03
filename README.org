@@ -80,7 +80,7 @@ System support over 240 million profiles of US citizens.
     
 -  Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for realtime evaluation).
 
-#+begin_src plantuml :file SystemDeployment.png
+#+begin_src plantuml :file ./Resources/SystemDeployment.png
 
 package "Training" {
 node "Training Box" as TB {
@@ -138,7 +138,7 @@ Training Box use Google _Tensor Flow_ as AI
 Old and new profiles form `Train Corpus` which is used by _TensorFlow_ to create new `Models`
 
 *** Deployment
-#+begin_src plantuml :file TrainingBoxDeployment.png
+#+begin_src plantuml :file ./Resources/TrainingBoxDeployment.png
 component [Train Corpus] as Corpus
 
 node {
@@ -152,7 +152,7 @@ TF --> Model
 
 Operaional Sequence is shown here:
 *** Sequence
-#+begin_src plantuml :file TrainingSequence.png
+#+begin_src plantuml :file ./Resources/TrainingSequence.png
 Controller --> Crawler: Crawl Profiles
 Controller <-- Crawler: crawled Profiles
 Controller --> IdentityMatcher: Match identities and merge profiles
@@ -170,7 +170,7 @@ Crawling is performed over multiple resources. We need the way to properly match
 We might use email or phone as unique intentifier, since name won't always work.
 Since some resources might not return unique identifier we use AI comparing fiels.
 
-#+begin_src plantuml :file IdentityMatchSequence.png
+#+begin_src plantuml :file ./Resources/IdentityMatchSequence.png
 Controller --> IdentityMatcher: Sends unmatched Profiles for similarity check
 IdentityMatcher --> TensorFlow: performs field analyzis to determine similarity
 IdentityMatcher <-- TensorFlow: sends back result for each pair of Profiles
@@ -185,7 +185,7 @@ for next alorithm/model train. We will apparently have several purposes (so mode
 ** Evaluation Box
 Evaluation boxes will also be used all the time, they will serve large datasets searching for appropriate data according to consumer's search.
 
-#+begin_src plantuml :file EvaluationBoxDeployment.png
+#+begin_src plantuml :file ./Resources/EvaluationBoxDeployment.png
 [Profiles] as Profiles
 [Model] as Model
 
