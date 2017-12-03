@@ -1,7 +1,0 @@
-@startuml
-Controller --> IdentityMatcher: Sends unmatched Profiles for similarity check
-IdentityMatcher --> TensorFlow: performs field analyzis to determine similarity
-IdentityMatcher <-- TensorFlow: sends back result for each pair of Profiles
-IdentityMatcher --> ProfileMerger: Sends profile pairs to be merged
-ProfileMerger --> DB: updates DataBase with merged profiels
-@enduml

@@ -1,4 +1,4 @@
-# Overall System Architecture
+* Overall System Architecture
 [PeopleMatchAI](https://github.com/softsky/people-match-ai) designed for fast determination of purchase capabilities using person profile.
 
 Persons profile looks like this:
@@ -59,94 +59,171 @@ Persons profile looks like this:
 
 
   
-### Comments on Person Profile
+** Comments on Person Profile
     
-* mergedDetails section contains the array of profile data collected from different places
-* it may contain duplicated
-* it may contain empty records
+- mergedDetails section contains the array of profile data collected from different places
+- it may contain duplicated
+- it may contain empty records
 
 System support over 240 million profiles of US citizens.
 
-## Requirements
+** Requirements
     
-* Scalability:
+- Scalability:
     System architecture should be scalable and high performant (in terms of traininig and evaluation).
-* High Performance:
+- High Performance:
     Since there will be multiple concurrent searches, and every search will take valuable amount of time, previous results should be cached.
     Cache will be wiped every time main database of people profiles is updated.
     We should monitor for most frequent searches and cache results only for them, while searches performed one or few times won't be cached to save memory and drive space
     
-## Other requirements:
+** Other requirements:
     
-* Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for realtime evaluation).
+-  Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for realtime evaluation).
 
-[System Deployment UML Diagram](Resources/uml/SystemDeployment.uml)
-![Deployment Diagram](Resources/SystemDeployment.uml.png)
+#+begin_src plantuml :file SystemDeployment.png
+
+package "Training" {
+node "Training Box" as TB {
+  [Model To Train]
+  [Special Purpose Algorithm]
+  [GPU Rack]
+} 
+}
+
+cloud "Evaluation" {
+node "Evaluation Box #1" as EB1{
+  [Model] as EB1_M
+  [Special Purpose Algorithm] as EB1_SPA
+  [GPU Rack] as EB1_GPU
+} 
+node "Evaluation Box #2" as EB2{
+  [Model] as EB2_M
+  [Special Purpose Algorithm] as EB2_SPA
+  [GPU Rack] as EB2_GPU
+} 
+node "Evaluation Box #3" as EB3{
+  [Model] as EB3_M
+  [Special Purpose Algorithm] as EB3_SPA
+  [GPU Rack] as EB3_GPU
+} 
+node "Evaluation Box #N" as EBN {
+  [Model] as EB4_M
+  [Special Purpose Algorithm] as EB4_SPA
+  [GPU Rack] as EB4_GPU
+} 
+
+}
+
+TB --> EB1
+TB --> EB2
+TB --> EB3
+TB --> EBN 
+#+end_src
+
+
 Basically system architecture will look like that:
 
-## Training Box
+** Training Box
 
 Training Box performs following operations:
 
-* New Profiles Crawling
-* Itentity Match and Profile Merging
-* Profile Enhancement
-* Model training
-* Model distribution across Evaluation Nodes
+- New Profiles Crawling
+- Itentity Match and Profile Merging
+- Profile Enhancement
+- Model training
+- Model distribution across Evaluation Nodes
 
 Training Box use Google _Tensor Flow_ as AI
 
 Old and new profiles form `Train Corpus` which is used by _TensorFlow_ to create new `Models`
 
-#### Deployment
-[Training Box Deployment UML Diagram](Resources/uml/TrainigBoxDeployment.uml)
-![Training Box](Resources/TrainingBoxDeployment.uml.png)
+*** Deployment
+#+begin_src plantuml :file TrainingBoxDeployment.png
+component [Train Corpus] as Corpus
+
+node {
+ component [TensorFlow] as TF
+ component [Model To Train] as Model
+}
+
+Corpus --> TF
+TF --> Model
+#+end_src
 
 Operaional Sequence is shown here:
-#### Sequence
-[Training Sequence UML Diagram](Resources/uml/Resources/uml/TrainSequence.uml)
-![Training](Resources/TrainSequence.uml.png)
+*** Sequence
+#+begin_src plantuml :file TrainingSequence.png
+Controller --> Crawler: Crawl Profiles
+Controller <-- Crawler: crawled Profiles
+Controller --> IdentityMatcher: Match identities and merge profiles
+Controller <-- Crawler: merged Profiles
+Controller --> Enhancer: Enhance Profile
+Controller <-- Enhancer: enhanced Profiles
+Controller --> DB: Update database with enhanced Profiles
 
-#### Identity Match
+Controller --> Train: Re-train DB with new profile corpus
+Controller --> Network: Distribute updated Model through Evalutaion nodess
+#+end_src
+
+*** Identity Match
 Crawling is performed over multiple resources. We need the way to properly match identities and merge their profiles.
 We might use email or phone as unique intentifier, since name won't always work.
 Since some resources might not return unique identifier we use AI comparing fiels.
 
-[Identity Match Sequence](Resources/uml/IdentityMatchSequece.uml)
-![Identity Match Sequence Diagram](Resources/IdentityMatchSequence.uml.png)
-
+#+begin_src plantuml :file IdentityMatchSequence.png
+Controller --> IdentityMatcher: Sends unmatched Profiles for similarity check
+IdentityMatcher --> TensorFlow: performs field analyzis to determine similarity
+IdentityMatcher <-- TensorFlow: sends back result for each pair of Profiles
+IdentityMatcher --> ProfileMerger: Sends profile pairs to be merged
+ProfileMerger --> DB: updates DataBase with merged profiels
+#+end_src
 
 Training box will be used most of the time to train all special purposes models using probably slightly modified Inception v3 alorigthm. 
 Traning it from scratch is time consuming operation, however once all special purpose algos and models are trained it could be put down to save hosting cost and be running only once it's needed next time 
 for next alorithm/model train. We will apparently have several purposes (so models and algos) depending on type of information consumers need to receive as the result of their searches.
 
-## Evaluation Box
+** Evaluation Box
 Evaluation boxes will also be used all the time, they will serve large datasets searching for appropriate data according to consumer's search.
 
-[Evaluation Box Deployment UML Diagram](Resources/uml/EvaluationBoxDeployment.uml)
-![Evalutaion Box](Resources/EvaluationBoxDeployment.uml.png)
+#+begin_src plantuml :file EvaluationBoxDeployment.png
+[Profiles] as Profiles
+[Model] as Model
 
-## System Requirements
+node {
+ component [TensorFlow] as TF
+ [Controller] as Controller
+}
 
-### System hardware requirements
+component [Evaluation Result] as Result
+
+Profiles --> Controller
+Model --> Controller
+Controller --> TF 
+TF --> Controller
+Controller --> Result
+#+end_src
+
+** System Requirements
+
+*** System hardware requirements
 Here are system software requirements 
 
-* Training box:
+- Training box:
   *is distributed among 5 high performant 128Gb/10TB 6*12 Nvidia GPU machines*
       
-* Evaluation boxes: 
+- Evaluation boxes: 
   *depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)*
     
-### System Software Requirements
+*** System Software Requirements
 Here are system software requirements 
 
-* OS: Amazon/Ubuntu Linux with recent 4.x kernel
-* DB: MongoDB 3.3+
-* AI: Google TenserFlow 1.x
-* JVM: v1.8 or higher
+- OS: Amazon/Ubuntu Linux with recent 4.x kernel
+- DB: MongoDB 3.3+
+- AI: Google TenserFlow 1.x
+- JVM: v1.8 or higher
 
     
-### How to run
+*** How to run
 From the project directory
 
 ``` shell
@@ -154,3 +231,22 @@ docker-compose up
 docker exec -ti peoplematchai_master_1 bash
 spb run
 ```
+
+
+
+
+
+
+
+
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml
+
+
+
+

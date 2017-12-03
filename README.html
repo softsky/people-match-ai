@@ -1,88 +1,353 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>README.html</title>
+<!-- 2017-12-03 Sun 10:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
-
 <body>
-
-<h1>Overall System Architecture</h1>
-
-<p><a href="https://github.com/softsky/people-match-ai">PeopleMatchAI</a> designed for fast determination of purchase capabilities using person profile.</p>
-
-<p>Persons profile looks like this:</p>
-
-<p>``` javascript
-{
-    "<em>id": {
-        "$oid": "58ea248524dce09f41209710"
-    },
-    "searchResult": [
-        {
-            "otherEmails": [],
-            "country": "United States",
-            "source": "PeopleData",
-            "lastUpdated": "2016-09-26T16:54:28Z",
-            "id": "AVdO</em>GcbPKMaPmPU7jEY",
-            "state": "arizona",
-            "probability": 1,
-            "query": "MANUAL_REQUEST",
-            "firstName": "John",
-            "phone": "1-520-247-9050",
-            "lastName": "Soukup",
-            "stateAbbr": "AZ",
-            "activity": null,
-            "gender": "M",
-            "city": "Tucson",
-            "result": {
-                "resultStatus": "OK",
-            },
-            "term": "[1]",
-            "mergedIdentities": [
-                {
-                    "source": "EX",
-                    "datetime": "2016-06-23T00:00:00Z",
-                    "lname": "Soukup",
-                    "class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
-                    "email": "c.l.soukup@comcast.net",
-                    "fname": "John",
-                    "address": {
-                        "zip": "85749",
-                        "city": "Tucson",
-                        "streetAddress": "9352 E Vallarta Trl",
-                        "state": "AZ",
-                        "class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
-                    },
-                    "ip": [
-                        "71.226.126.234"
-                    ],
-                    "phone": [
-                        "1-520-247-9050"
-                    ],
-                },
-    ]}
-]}</p>
-
-<p>```</p>
-
-<h3>Comments on Person Profile</h3>
-
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
 <ul>
+<li><a href="#org6ec6fca">1. Overall System Architecture</a>
+<ul>
+<li><a href="#orgbf4199c">1.1. Comments on Person Profile</a></li>
+<li><a href="#orgf387278">1.2. Requirements</a></li>
+<li><a href="#org496fe28">1.3. Other requirements:</a></li>
+<li><a href="#orge2fa63c">1.4. Training Box</a>
+<ul>
+<li><a href="#org2c6bc8a">1.4.1. Deployment</a></li>
+<li><a href="#org83ce8d8">1.4.2. Sequence</a></li>
+<li><a href="#org5993d9f">1.4.3. Identity Match</a></li>
+</ul>
+</li>
+<li><a href="#orgb718baf">1.5. Evaluation Box</a></li>
+<li><a href="#org489ab25">1.6. System Requirements</a>
+<ul>
+<li><a href="#org9cb204f">1.6.1. System hardware requirements</a></li>
+<li><a href="#orga85ecca">1.6.2. System Software Requirements</a></li>
+<li><a href="#org020fa56">1.6.3. How to run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6ec6fca" class="outline-2">
+<h2 id="org6ec6fca"><span class="section-number-2">1</span> Overall System Architecture</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+[PeopleMatchAI](<a href="https://github.com/softsky/people-match-ai">https://github.com/softsky/people-match-ai</a>) designed for fast determination of purchase capabilities using person profile.
+</p>
+
+<p>
+Persons profile looks like this:
+</p>
+
+<p>
+``` javascript
+{
+	"<sub>id</sub>": {
+		"$oid": "58ea248524dce09f41209710"
+	},
+	"searchResult": [
+		{
+			"otherEmails": [],
+			"country": "United States",
+			"source": "PeopleData",
+			"lastUpdated": "2016-09-26T16:54:28Z",
+			"id": "AVdO<sub>GcbPKMaPmPU7jEY</sub>",
+			"state": "arizona",
+			"probability": 1,
+			"query": "MANUAL<sub>REQUEST</sub>",
+			"firstName": "John",
+			"phone": "1-520-247-9050",
+			"lastName": "Soukup",
+			"stateAbbr": "AZ",
+			"activity": null,
+			"gender": "M",
+			"city": "Tucson",
+			"result": {
+				"resultStatus": "OK",
+			},
+			"term": "[1]",
+			"mergedIdentities": [
+				{
+					"source": "EX",
+					"datetime": "2016-06-23T00:00:00Z",
+					"lname": "Soukup",
+					"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataPerson",
+					"email": "c.l.soukup@comcast.net",
+					"fname": "John",
+					"address": {
+						"zip": "85749",
+						"city": "Tucson",
+						"streetAddress": "9352 E Vallarta Trl",
+						"state": "AZ",
+						"class": "com.selerityfinancial.person.peopledata.dto.PeopleDataAddress"
+					},
+					"ip": [
+						"71.226.126.234"
+					],
+					"phone": [
+						"1-520-247-9050"
+					],
+				},
+    ]}
+]}
+</p>
+
+
+<p>
+```
+</p>
+</div>
+
+
+
+<div id="outline-container-orgbf4199c" class="outline-3">
+<h3 id="orgbf4199c"><span class="section-number-3">1.1</span> Comments on Person Profile</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
 <li>mergedDetails section contains the array of profile data collected from different places</li>
 <li>it may contain duplicated</li>
 <li>it may contain empty records</li>
 </ul>
 
-<p>System support over 240 million profiles of US citizens.</p>
+<p>
+System support over 240 million profiles of US citizens.
+</p>
+</div>
+</div>
 
-<h2>Requirements</h2>
-
-<ul>
+<div id="outline-container-orgf387278" class="outline-3">
+<h3 id="orgf387278"><span class="section-number-3">1.2</span> Requirements</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
 <li>Scalability:
 System architecture should be scalable and high performant (in terms of traininig and evaluation).</li>
 <li>High Performance:
@@ -90,22 +355,37 @@ Since there will be multiple concurrent searches, and every search will take val
 Cache will be wiped every time main database of people profiles is updated.
 We should monitor for most frequent searches and cache results only for them, while searches performed one or few times won't be cached to save memory and drive space</li>
 </ul>
+</div>
+</div>
 
-<h2>Other requirements:</h2>
-
-<ul>
+<div id="outline-container-org496fe28" class="outline-3">
+<h3 id="org496fe28"><span class="section-number-3">1.3</span> Other requirements:</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
 <li>Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for realtime evaluation).</li>
 </ul>
 
-<p><a href="Resources/uml/SystemDeployment.uml">System Deployment UML Diagram</a>
-<img src="Resources/SystemDeployment.uml.png" alt="Deployment Diagram" />
-Basically system architecture will look like that:</p>
 
-<h2>Training Box</h2>
+<div class="figure">
+<p><img src="SystemDeployment.png" alt="SystemDeployment.png" />
+</p>
+</div>
 
-<p>Training Box performs following operations:</p>
 
-<ul>
+<p>
+Basically system architecture will look like that:
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge2fa63c" class="outline-3">
+<h3 id="orge2fa63c"><span class="section-number-3">1.4</span> Training Box</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Training Box performs following operations:
+</p>
+
+<ul class="org-ul">
 <li>New Profiles Crawling</li>
 <li>Itentity Match and Profile Merging</li>
 <li>Profile Enhancement</li>
@@ -113,75 +393,139 @@ Basically system architecture will look like that:</p>
 <li>Model distribution across Evaluation Nodes</li>
 </ul>
 
-<p>Training Box use Google <em>Tensor Flow</em> as AI</p>
+<p>
+Training Box use Google <span class="underline">Tensor Flow</span> as AI
+</p>
 
-<p>Old and new profiles form <code>Train Corpus</code> which is used by <em>TensorFlow</em> to create new <code>Models</code></p>
+<p>
+Old and new profiles form `Train Corpus` which is used by <span class="underline">TensorFlow</span> to create new `Models`
+</p>
+</div>
 
-<h4>Deployment</h4>
+<div id="outline-container-org2c6bc8a" class="outline-4">
+<h4 id="org2c6bc8a"><span class="section-number-4">1.4.1</span> Deployment</h4>
+<div class="outline-text-4" id="text-1-4-1">
 
-<p><a href="Resources/uml/TrainigBoxDeployment.uml">Training Box Deployment UML Diagram</a>
-<img src="Resources/TrainingBoxDeployment.uml.png" alt="Training Box" /></p>
+<div class="figure">
+<p><img src="TrainingBoxDeployment.png" alt="TrainingBoxDeployment.png" />
+</p>
+</div>
 
-<p>Operaional Sequence is shown here:</p>
+<p>
+Operaional Sequence is shown here:
+</p>
+</div>
+</div>
+<div id="outline-container-org83ce8d8" class="outline-4">
+<h4 id="org83ce8d8"><span class="section-number-4">1.4.2</span> Sequence</h4>
+<div class="outline-text-4" id="text-1-4-2">
 
-<h4>Sequence</h4>
+<div class="figure">
+<p><img src="TrainingSequence.png" alt="TrainingSequence.png" />
+</p>
+</div>
+</div>
+</div>
 
-<p><a href="Resources/uml/Resources/uml/TrainSequence.uml">Training Sequence UML Diagram</a>
-<img src="Resources/TrainSequence.uml.png" alt="Training" /></p>
-
-<h4>Identity Match</h4>
-
-<p>Crawling is performed over multiple resources. We need the way to properly match identities and merge their profiles.
+<div id="outline-container-org5993d9f" class="outline-4">
+<h4 id="org5993d9f"><span class="section-number-4">1.4.3</span> Identity Match</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<p>
+Crawling is performed over multiple resources. We need the way to properly match identities and merge their profiles.
 We might use email or phone as unique intentifier, since name won't always work.
-Since some resources might not return unique identifier we use AI comparing fiels.</p>
+Since some resources might not return unique identifier we use AI comparing fiels.
+</p>
 
-<p><a href="Resources/uml/IdentityMatchSequece.uml">Identity Match Sequence</a>
-<img src="Resources/IdentityMatchSequence.uml.png" alt="Identity Match Sequence Diagram" /></p>
 
-<p>Training box will be used most of the time to train all special purposes models using probably slightly modified Inception v3 alorigthm. 
+<div class="figure">
+<p><img src="IdentityMatchSequence.png" alt="IdentityMatchSequence.png" />
+</p>
+</div>
+
+<p>
+Training box will be used most of the time to train all special purposes models using probably slightly modified Inception v3 alorigthm. 
 Traning it from scratch is time consuming operation, however once all special purpose algos and models are trained it could be put down to save hosting cost and be running only once it's needed next time 
-for next alorithm/model train. We will apparently have several purposes (so models and algos) depending on type of information consumers need to receive as the result of their searches.</p>
+for next alorithm/model train. We will apparently have several purposes (so models and algos) depending on type of information consumers need to receive as the result of their searches.
+</p>
+</div>
+</div>
+</div>
 
-<h2>Evaluation Box</h2>
+<div id="outline-container-orgb718baf" class="outline-3">
+<h3 id="orgb718baf"><span class="section-number-3">1.5</span> Evaluation Box</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Evaluation boxes will also be used all the time, they will serve large datasets searching for appropriate data according to consumer's search.
+</p>
 
-<p>Evaluation boxes will also be used all the time, they will serve large datasets searching for appropriate data according to consumer's search.</p>
 
-<p><a href="Resources/uml/EvaluationBoxDeployment.uml">Evaluation Box Deployment UML Diagram</a>
-<img src="Resources/EvaluationBoxDeployment.uml.png" alt="Evalutaion Box" /></p>
+<div class="figure">
+<p><img src="EvaluationBoxDeployment.png" alt="EvaluationBoxDeployment.png" />
+</p>
+</div>
+</div>
+</div>
 
-<h2>System Requirements</h2>
+<div id="outline-container-org489ab25" class="outline-3">
+<h3 id="org489ab25"><span class="section-number-3">1.6</span> System Requirements</h3>
+<div class="outline-text-3" id="text-1-6">
+</div>
+<div id="outline-container-org9cb204f" class="outline-4">
+<h4 id="org9cb204f"><span class="section-number-4">1.6.1</span> System hardware requirements</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<p>
+Here are system software requirements 
+</p>
 
-<h3>System hardware requirements</h3>
+<ul class="org-ul">
+<li>Training box:
+<b>is distributed among 5 high performant 128Gb/10TB 6*12 Nvidia GPU machines</b></li>
 
-<p>Here are system software requirements </p>
-
-<ul>
-<li><p>Training box:
-<em>is distributed among 5 high performant 128Gb/10TB 6</em>12 Nvidia GPU machines*</p></li>
-<li><p>Evaluation boxes: 
-<em>depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)</em></p></li>
+<li>Evaluation boxes: 
+<b>depends on number of concurrent searches and overall database size and complexity (in terms of fields in persons profiles)</b></li>
 </ul>
+</div>
+</div>
 
-<h3>System Software Requirements</h3>
+<div id="outline-container-orga85ecca" class="outline-4">
+<h4 id="orga85ecca"><span class="section-number-4">1.6.2</span> System Software Requirements</h4>
+<div class="outline-text-4" id="text-1-6-2">
+<p>
+Here are system software requirements 
+</p>
 
-<p>Here are system software requirements </p>
-
-<ul>
+<ul class="org-ul">
 <li>OS: Amazon/Ubuntu Linux with recent 4.x kernel</li>
 <li>DB: MongoDB 3.3+</li>
 <li>AI: Google TenserFlow 1.x</li>
 <li>JVM: v1.8 or higher</li>
 </ul>
+</div>
+</div>
 
-<h3>How to run</h3>
 
-<p>From the project directory</p>
+<div id="outline-container-org020fa56" class="outline-4">
+<h4 id="org020fa56"><span class="section-number-4">1.6.3</span> How to run</h4>
+<div class="outline-text-4" id="text-1-6-3">
+<p>
+From the project directory
+</p>
 
-<p><code>shell
+<p>
+``` shell
 docker-compose up
-docker exec -ti peoplematchai_master_1 bash
+docker exec -ti peoplematchai<sub>master</sub><sub>1</sub> bash
 spb run
-</code></p>
-
+```
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2017-12-03 Sun 10:19</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
 </body>
 </html>
