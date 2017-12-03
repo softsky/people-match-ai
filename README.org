@@ -120,7 +120,8 @@ TB --> EB3
 TB --> EBN 
 #+end_src
 
-#+result ./Resources/SystemDeployment.png
+#+results:
+file: ./Resources/SystemDeployment.png
 
 Basically system architecture will look like that:
 
