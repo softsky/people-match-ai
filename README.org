@@ -120,9 +120,6 @@ TB --> EB3
 TB --> EBN 
 #+end_src
 
-#+results:
-file: ./Resources/SystemDeployment.png
-
 Basically system architecture will look like that:
 
 ** Training Box
