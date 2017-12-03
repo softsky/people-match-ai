@@ -13,6 +13,5 @@ src/main/resources/model
 /src/main/resources/ai/train_data_identity_match0.csv
 /src/main/resources/ai/train_data_look_alike.csv
 /src/main/resources/ai/ai_model_files/custom.css
-
 /src/main/resources/ai/ai_model_files/jquery.min.js
 /src/main/resources/ai/ai_model_files/require.min.js
