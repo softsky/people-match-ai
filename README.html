@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-12-03 Sun 11:23 -->
+<!-- 2017-12-03 Sun 11:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -232,24 +232,24 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org6f43446">1. Overall System Architecture</a>
+<li><a href="#orgc72e9d9">1. Overall System Architecture</a>
 <ul>
-<li><a href="#org10c970e">1.1. Comments on Person Profile</a></li>
-<li><a href="#org790d1ca">1.2. Requirements</a></li>
-<li><a href="#orgf09b7f3">1.3. Other requirements:</a></li>
-<li><a href="#orgb234079">1.4. Training Box</a>
+<li><a href="#org9d52856">1.1. Comments on Person Profile</a></li>
+<li><a href="#orgd56fe43">1.2. Requirements</a></li>
+<li><a href="#orgb8b05f3">1.3. Other requirements:</a></li>
+<li><a href="#org8d78110">1.4. Training Box</a>
 <ul>
-<li><a href="#org711fe7d">1.4.1. Deployment</a></li>
-<li><a href="#org85ef694">1.4.2. Sequence</a></li>
-<li><a href="#org2f19b7e">1.4.3. Identity Match</a></li>
+<li><a href="#orgc4535c7">1.4.1. Deployment</a></li>
+<li><a href="#orgeccce05">1.4.2. Sequence</a></li>
+<li><a href="#org2c19e25">1.4.3. Identity Match</a></li>
 </ul>
 </li>
-<li><a href="#org79a177c">1.5. Evaluation Box</a></li>
-<li><a href="#orgd6cba77">1.6. System Requirements</a>
+<li><a href="#orgb7696e7">1.5. Evaluation Box</a></li>
+<li><a href="#orgedda781">1.6. System Requirements</a>
 <ul>
-<li><a href="#orge4502e8">1.6.1. System hardware requirements</a></li>
-<li><a href="#orge8664ea">1.6.2. System Software Requirements</a></li>
-<li><a href="#org707683d">1.6.3. How to run</a></li>
+<li><a href="#org6f5fd2c">1.6.1. System hardware requirements</a></li>
+<li><a href="#org066164c">1.6.2. System Software Requirements</a></li>
+<li><a href="#orgdd23ce1">1.6.3. How to run</a></li>
 </ul>
 </li>
 </ul>
@@ -257,8 +257,8 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org6f43446" class="outline-2">
-<h2 id="org6f43446"><span class="section-number-2">1</span> Overall System Architecture</h2>
+<div id="outline-container-orgc72e9d9" class="outline-2">
+<h2 id="orgc72e9d9"><span class="section-number-2">1</span> Overall System Architecture</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 [PeopleMatchAI](<a href="https://github.com/softsky/people-match-ai">https://github.com/softsky/people-match-ai</a>) designed for fast determination of purchase capabilities using person profile.
@@ -329,8 +329,8 @@ Persons profile looks like this:
 
 
 
-<div id="outline-container-org10c970e" class="outline-3">
-<h3 id="org10c970e"><span class="section-number-3">1.1</span> Comments on Person Profile</h3>
+<div id="outline-container-org9d52856" class="outline-3">
+<h3 id="org9d52856"><span class="section-number-3">1.1</span> Comments on Person Profile</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>mergedDetails section contains the array of profile data collected from different places</li>
@@ -344,8 +344,8 @@ System support over 240 million profiles of US citizens.
 </div>
 </div>
 
-<div id="outline-container-org790d1ca" class="outline-3">
-<h3 id="org790d1ca"><span class="section-number-3">1.2</span> Requirements</h3>
+<div id="outline-container-orgd56fe43" class="outline-3">
+<h3 id="orgd56fe43"><span class="section-number-3">1.2</span> Requirements</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>Scalability:
@@ -358,8 +358,8 @@ We should monitor for most frequent searches and cache results only for them, wh
 </div>
 </div>
 
-<div id="outline-container-orgf09b7f3" class="outline-3">
-<h3 id="orgf09b7f3"><span class="section-number-3">1.3</span> Other requirements:</h3>
+<div id="outline-container-orgb8b05f3" class="outline-3">
+<h3 id="orgb8b05f3"><span class="section-number-3">1.3</span> Other requirements:</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for realtime evaluation).</li>
@@ -378,8 +378,8 @@ Basically system architecture will look like that:
 </div>
 </div>
 
-<div id="outline-container-orgb234079" class="outline-3">
-<h3 id="orgb234079"><span class="section-number-3">1.4</span> Training Box</h3>
+<div id="outline-container-org8d78110" class="outline-3">
+<h3 id="org8d78110"><span class="section-number-3">1.4</span> Training Box</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 Training Box performs following operations:
@@ -402,8 +402,8 @@ Old and new profiles form `Train Corpus` which is used by <span class="underline
 </p>
 </div>
 
-<div id="outline-container-org711fe7d" class="outline-4">
-<h4 id="org711fe7d"><span class="section-number-4">1.4.1</span> Deployment</h4>
+<div id="outline-container-orgc4535c7" class="outline-4">
+<h4 id="orgc4535c7"><span class="section-number-4">1.4.1</span> Deployment</h4>
 <div class="outline-text-4" id="text-1-4-1">
 
 <div class="figure">
@@ -416,8 +416,8 @@ Operaional Sequence is shown here:
 </p>
 </div>
 </div>
-<div id="outline-container-org85ef694" class="outline-4">
-<h4 id="org85ef694"><span class="section-number-4">1.4.2</span> Sequence</h4>
+<div id="outline-container-orgeccce05" class="outline-4">
+<h4 id="orgeccce05"><span class="section-number-4">1.4.2</span> Sequence</h4>
 <div class="outline-text-4" id="text-1-4-2">
 
 <div class="figure">
@@ -427,8 +427,8 @@ Operaional Sequence is shown here:
 </div>
 </div>
 
-<div id="outline-container-org2f19b7e" class="outline-4">
-<h4 id="org2f19b7e"><span class="section-number-4">1.4.3</span> Identity Match</h4>
+<div id="outline-container-org2c19e25" class="outline-4">
+<h4 id="org2c19e25"><span class="section-number-4">1.4.3</span> Identity Match</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
 Crawling is performed over multiple resources. We need the way to properly match identities and merge their profiles.
@@ -451,8 +451,8 @@ for next alorithm/model train. We will apparently have several purposes (so mode
 </div>
 </div>
 
-<div id="outline-container-org79a177c" class="outline-3">
-<h3 id="org79a177c"><span class="section-number-3">1.5</span> Evaluation Box</h3>
+<div id="outline-container-orgb7696e7" class="outline-3">
+<h3 id="orgb7696e7"><span class="section-number-3">1.5</span> Evaluation Box</h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 Evaluation boxes will also be used all the time, they will serve large datasets searching for appropriate data according to consumer's search.
@@ -466,12 +466,12 @@ Evaluation boxes will also be used all the time, they will serve large datasets 
 </div>
 </div>
 
-<div id="outline-container-orgd6cba77" class="outline-3">
-<h3 id="orgd6cba77"><span class="section-number-3">1.6</span> System Requirements</h3>
+<div id="outline-container-orgedda781" class="outline-3">
+<h3 id="orgedda781"><span class="section-number-3">1.6</span> System Requirements</h3>
 <div class="outline-text-3" id="text-1-6">
 </div>
-<div id="outline-container-orge4502e8" class="outline-4">
-<h4 id="orge4502e8"><span class="section-number-4">1.6.1</span> System hardware requirements</h4>
+<div id="outline-container-org6f5fd2c" class="outline-4">
+<h4 id="org6f5fd2c"><span class="section-number-4">1.6.1</span> System hardware requirements</h4>
 <div class="outline-text-4" id="text-1-6-1">
 <p>
 Here are system software requirements 
@@ -487,8 +487,8 @@ Here are system software requirements
 </div>
 </div>
 
-<div id="outline-container-orge8664ea" class="outline-4">
-<h4 id="orge8664ea"><span class="section-number-4">1.6.2</span> System Software Requirements</h4>
+<div id="outline-container-org066164c" class="outline-4">
+<h4 id="org066164c"><span class="section-number-4">1.6.2</span> System Software Requirements</h4>
 <div class="outline-text-4" id="text-1-6-2">
 <p>
 Here are system software requirements 
@@ -504,8 +504,8 @@ Here are system software requirements
 </div>
 
 
-<div id="outline-container-org707683d" class="outline-4">
-<h4 id="org707683d"><span class="section-number-4">1.6.3</span> How to run</h4>
+<div id="outline-container-orgdd23ce1" class="outline-4">
+<h4 id="orgdd23ce1"><span class="section-number-4">1.6.3</span> How to run</h4>
 <div class="outline-text-4" id="text-1-6-3">
 <p>
 From the project directory
@@ -518,32 +518,13 @@ docker exec -ti peoplematchai<sub>master</sub><sub>1</sub> bash
 spb run
 ```
 </p>
-
-
-
-
-
-
-
-
-<p>
-@startuml
-Alice -&gt; Bob: Authentication Request
-Bob &#x2013;&gt; Alice: Authentication Response
-</p>
-
-<p>
-Alice -&gt; Bob: Another authentication Request
-Alice &lt;&#x2013; Bob: another authentication Response
-@enduml
-</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2017-12-03 Sun 11:23</p>
+<p class="date">Created: 2017-12-03 Sun 11:26</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
