@@ -224,8 +224,8 @@ Controller --> Result
 *** How to run
  From the project directory
 
- #+begin_src shell
+#+begin_src shell
  docker-compose up
  docker exec -ti peoplematchai_master_1 bash
  spb run
- #+end_src
+#+end_src
