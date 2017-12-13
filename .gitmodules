@@ -1,3 +1,6 @@
 [submodule "spark-docker"]
 	path = spark-docker
 	url = git@github.com:softsky/spark-docker.git
+[submodule "hadoop-docker"]
+	path = hadoop-docker
+	url = git@github.com:softsky/hadoop-docker.git
