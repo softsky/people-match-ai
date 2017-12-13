@@ -31,7 +31,7 @@ services:
       - "8012"
       - "61621"
     master: # Master Spark node
-      image: singularities/spark
+      image: softsky/spark
       command: start-spark master
       hostname: master
       ports:
@@ -41,7 +41,7 @@ services:
         - "8080:8080"
         - "50070:50070"
     worker: # Worker Spark node (should be scaled)
-      image: singularities/spark
+      image: softsky/spark
       command: start-spark worker master
       environment:
         SPARK_WORKER_CORES: 2
