@@ -1,4 +1,4 @@
-* Overall System Architecture
+ * Overall System Architecture
 [PeopleMatchAI](https://github.com/softsky/people-match-ai) designed for fast determination of purchase capabilities using person profile.
 
 Persons profile looks like this:
@@ -79,7 +79,6 @@ System support over 240 million profiles of US citizens.
 -  Model, once trained for some search purpose could be easily distributed between evaluation nodes I'd suggest using of dockerized containers (some for training and other for realtime evaluation).
 
 #+begin_src plantuml :file ./Resources/SystemDeployment.png
-
 package "Training" {
 node "Training Box" as TB {
   [Model To Train]
@@ -118,6 +117,9 @@ TB --> EB3
 TB --> EBN 
 #+end_src
 
+#+RESULTS:
+[[file:./Resources/SystemDeployment.png]]
+
 Basically system architecture will look like that:
 
 ** Training Box
@@ -133,6 +135,24 @@ Training Box performs following operations:
 Training Box use Google _Tensor Flow_ as AI
 
 Old and new profiles form `Train Corpus` which is used by _TensorFlow_ to create new `Models`
+
+#+begin_src plantuml :file ./Resources/Component.png
+package "Master" {
+  node "Spark" {
+   [CSVImporter] - Importer:implements
+   [JSONImporter] - Importer:implements
+   [DBResultExporter] - Exporter:implements
+  }
+  node "Hadoop" {
+     [out]"HDFS folder"  ..> [BatchPredictionResult.csv]:contains
+     [in]"HDFS folder" ..> [InputData.csv]:contains
+  }
+ Spark -> Hadoop:use
+}
+#+end_src
+
+#+RESULTS:
+[[file:./Resources/Component.png]]
 
 *** Deployment
 #+begin_src plantuml :file ./Resources/TrainingBoxDeployment.png
