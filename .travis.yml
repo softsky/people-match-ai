@@ -4,4 +4,4 @@ jdk:
   - openjdk7
 # disable the default submodule logic
 git:
-  submodules: true  
+  submodules: true
