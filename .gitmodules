@@ -4,3 +4,6 @@
 [submodule "hadoop-docker"]
 	path = hadoop-docker
 	url = git@github.com:softsky/hadoop-docker.git
+[submodule "hdfs-handlers"]
+	path = hdfs-handlers
+	url = git@github.com:softsky/hdfs-handlers.git
