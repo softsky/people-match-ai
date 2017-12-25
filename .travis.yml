@@ -1,4 +1,7 @@
+sudo: required
 language: java
+services: 
+  - docker
 jdk:
   - oraclejdk8
 #  - openjdk7
@@ -9,3 +12,19 @@ git:
 before_install:
     - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
     - git submodule update --init --recursive
+before_deploy:
+  - docker build -t spark:latest spark-docker
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+deploy:
+  # deploy master to the staging environment
+  - provider: script
+    skip_cleanup: true
+    script: ./deploy.sh staging
+    on:
+      branch: master
+  # deploy master to production
+  - provider: script
+    skip_cleanup: true
+    script: ./deploy.sh production
+    on:
+      branch: production
