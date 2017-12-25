@@ -14,7 +14,7 @@ before_install:
     - git submodule update --init --recursive
 before_deploy:
   - docker build -t spark:latest spark-docker
-  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker login -u $DOCKER_USERNAME -p $(echo $DOCKER_PASSWORD | base64 -d)
 deploy:
   # deploy master to the staging environment
   - provider: script
