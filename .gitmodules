@@ -7,3 +7,6 @@
 [submodule "hdfs-handlers"]
 	path = hdfs-handlers
 	url = git@github.com:softsky/hdfs-handlers.git
+[submodule "people-match-ai-ui"]
+	path = people-match-ai-ui
+	url = ../people-match-ai-ui
