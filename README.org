@@ -1,4 +1,4 @@
- * Overall System Architecture
+* Overall System Architecture
 [PeopleMatchAI](https://github.com/softsky/people-match-ai) designed for fast determination of purchase capabilities using person profile.
 
 Persons profile looks like this:
