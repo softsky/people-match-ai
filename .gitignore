@@ -20,3 +20,5 @@ src/main/resources/model
 /.project
 /.settings/
 out/
+.idea
+*.iml

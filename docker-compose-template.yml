@@ -1,0 +1,40 @@
+version: "2"
+
+services:
+  master:
+    image: softsky/spark
+    command: start-spark master
+    hostname: master
+    ports:
+      - "6066:6066"
+      - "7070:7070"
+      - "8080:8080"
+      - "50070:50070"
+
+  worker:
+    image: softsky/spark
+    command: start-spark worker master
+    environment:
+      SPARK_WORKER_CORES: 1
+      SPARK_WORKER_MEMORY: 2g
+    links:
+      - master
+
+  hdfs-handlers:
+    image: softsky/hdfs-handlers
+    command: start-handlers master
+    hostname: handlers
+    environment:
+      AWS_ACCESS_KEY_ID: <put_your_ID_here>
+      AWS_SECRET_ACCESS_KEY: <put_your_secret_here>
+    links:
+      - master
+
+  peole-match-ui:
+    image: softsky/peole-match-ui
+    command: start-ui
+    hostname: handlers
+    ports:
+      - "8888:8888"
+    links:
+      - master
